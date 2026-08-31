@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engineering Career Fair Directory</title>
 
-    <!-- Tailwind CSS & DataTables CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 
@@ -38,13 +37,11 @@
 <body class="bg-slate-50 text-slate-800 min-h-screen p-4 md:p-8">
 
 <div class="max-w-7xl mx-auto bg-white rounded-xl shadow-md p-6 md:p-8 border border-slate-100">
-    <!-- Header Section -->
     <header class="border-b border-slate-200 pb-6 mb-6">
         <h1 class="text-3xl font-extrabold text-blue-900 tracking-tight">College of Engineering Career Fair</h1>
         <p class="text-slate-600 mt-2">Search attending employers, booth assignments, hiring preferences, target majors, and on-campus interview availability.</p>
     </header>
 
-    <!-- Table Container -->
     <div class="overflow-x-auto">
         <table id="directoryTable" class="w-full text-left border-collapse display">
             <thead class="bg-slate-100 text-slate-700 text-sm uppercase font-semibold">
@@ -59,13 +56,11 @@
             </tr>
             </thead>
             <tbody class="divide-y divide-slate-200 text-sm">
-            <!-- Data populated dynamically via JavaScript -->
             </tbody>
         </table>
     </div>
 </div>
 
-<!-- jQuery & DataTables JS -->
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 
@@ -95,7 +90,7 @@
                 render: function(data) {
                   if (!data) return '<span class="text-slate-400">N/A</span>';
                   let url = data.startsWith('http') ? data : 'https://' + data;
-                  return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline inline-flex items-center gap-1 font-medium">Visit Site ↗</a>`;
+                  return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline font-medium break-all">${data}</a>`;
                 }
               },
               {
