@@ -2,7 +2,6 @@ import csv
 import json
 import os
 
-# Set up paths relative to project root
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 
@@ -10,7 +9,6 @@ CSV_PATH = os.path.join(PROJECT_ROOT, 'data', 'employers.csv')
 OUTPUT_PATH = os.path.join(PROJECT_ROOT, 'employers.json')
 
 def clean_val(val):
-    """Strips extra quotes, whitespace, and formatting anomalies."""
     if not val:
         return ""
     return " ".join(str(val).strip().split())
@@ -20,52 +18,42 @@ def process_handshake_csv():
         print(f"Error: Could not find '{CSV_PATH}'. Place your CSV in the data/ directory.")
         return
 
-    employer_map = {}
+    employers_list = []
 
     with open(CSV_PATH, mode='r', encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
 
         for row in reader:
-            # Check approval status
-            status = clean_val(row.get("Registrations Status", "")).lower()
-            if status and status != "approved":
-                continue
-
-            # Target exact column names from your CSV
-            name = clean_val(row.get("Employers Name", ""))
-            majors = clean_val(row.get("Major Names", ""))
-            job_title = clean_val(row.get("Job Registrations Title", ""))
-
+            name = clean_val(row.get("Employer Name", ""))
             if not name:
                 continue
 
-            # Fallback for empty majors
+            industry = clean_val(row.get("Industry", "")) or "Engineering & Tech"
+            website = clean_val(row.get("Website", ""))
+            job_types = clean_val(row.get("Job Types", "")) or clean_val(row.get("Employment Types", "")) or "General Hiring"
+
+            majors = clean_val(row.get("Major Groups", "")) or clean_val(row.get("Majors", "")) or clean_val(row.get("Combined Majors", ""))
             if not majors:
                 majors = "All Engineering Majors / Not Specified"
 
-            # If employer was already added (multi-job row), aggregate job titles
-            if name in employer_map:
-                if job_title and job_title not in employer_map[name]["job_types"]:
-                    if employer_map[name]["job_types"] == "General Hiring":
-                        employer_map[name]["job_types"] = job_title
-                    else:
-                        employer_map[name]["job_types"] += f", {job_title}"
-            else:
-                employer_map[name] = {
-                    "name": name,
-                    "booth": "Assigned at Event",
-                    "industry": "Engineering & Tech",
-                    "majors": majors,
-                    "job_types": job_title if job_title else "General Hiring",
-                    "website": ""
-                }
+            raw_interviews = clean_val(row.get("Interviews ", "")).lower()
+            on_campus_interviews = "Yes" if raw_interviews == "yes" else "No"
 
-    employers_list = list(employer_map.values())
+            employer_entry = {
+                "name": name,
+                "booth": "TBD",
+                "industry": industry,
+                "job_types": job_types,
+                "majors": majors,
+                "website": website,
+                "on_campus_interviews": on_campus_interviews
+            }
+            employers_list.append(employer_entry)
 
     with open(OUTPUT_PATH, 'w', encoding='utf-8') as f:
         json.dump(employers_list, f, indent=2)
 
-    print(f"Success! Processed {len(employers_list)} unique approved employers into {OUTPUT_PATH}")
+    print(f"Success! Processed {len(employers_list)} employers into {OUTPUT_PATH}")
 
 if __name__ == '__main__':
     process_handshake_csv()
