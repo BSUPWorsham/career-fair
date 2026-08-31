@@ -1,746 +1,839 @@
 [
   {
-    "name": "AKS Engineering & Forestry LLC",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
-    "name": "ASM",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "(#4788209101) Engineer II, Field Service",
-    "website": ""
-  },
-  {
-    "name": "ATS Inland NW",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
     "name": "Ackerman-Estvold",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Construction Engineering, General Engineering",
+    "website": "https://www.ackerman-estvold.com/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Advanced Engineering and Environmental Services, LLC (AE2S)",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.ae2s.com",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "AKS Engineering & Forestry LLC",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Construction Engineering, Electrical Engineering, Mechanical Engineering",
+    "website": "http://www.aks-eng.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Allwest Testing & Engineering",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Engineering & Construction",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering",
+    "website": "http://www.allwesttesting.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Applied Materials",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Electronic & Computer Hardware",
+    "job_types": "Internship",
+    "majors": "Computer Engineering, Electrical Engineering, General Engineering, Materials Science & Engineering, Mechanical Engineering",
+    "website": "https://www.appliedmaterials.com/",
+    "on_campus_interviews": "Yes"
   },
   {
     "name": "Ardurra",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "https://ardurra.com/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Army Corps of Engineers",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Government - Local, State & Federal",
+    "job_types": "Job, Internship",
+    "majors": "Electrical Engineering, Mechanical Engineering",
+    "website": "http://www.nwd.usace.army.mil/Careers/HIP",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "ASM",
+    "booth": "TBD",
+    "industry": "Electronic & Computer Hardware",
+    "job_types": "Job",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://careers.asm.com",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "ATS Inland NW",
+    "booth": "TBD",
+    "industry": "Engineering & Construction",
+    "job_types": "Job, Internship",
+    "majors": "Computer Engineering, Construction Engineering, Electrical Engineering, Mechanical Engineering",
+    "website": "http://www.atsinlandnw.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Border States",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Wholesale Trade",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "https://borderstates.com/careers",
+    "on_campus_interviews": "No"
   },
   {
     "name": "C3 Civil Engineering",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
-    "name": "CSHQA, Inc.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "https://www.c3civileng.com/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Chief Architect Software",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Internet & Software",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "https://www.chiefarchitect.com/",
+    "on_campus_interviews": "Yes"
   },
   {
     "name": "City of Boise",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Government - Local, State & Federal",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.cityofboise.org",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Clark Pacific",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "Project Engineer (0-2 years' experience)",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Mechanical Engineering",
+    "website": "http://www.clarkpacific.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Clenera, LLC",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Utilities and Renewable Energy",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Construction Engineering, Data Science, Electrical Engineering, General Engineering, Information Systems Management, Materials Science & Engineering, Mechanical Engineering",
+    "website": "http://Clenera.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Copper Roots",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job",
+    "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
+    "website": "https://www.linkedin.com/company/copper-roots-inc/",
+    "on_campus_interviews": "Yes"
+  },
+  {
+    "name": "CSHQA, Inc.",
+    "booth": "TBD",
+    "industry": "Architecture and Planning",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
+    "website": "http://www.cshqa.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Curtiss-Wright",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Defense",
+    "job_types": "Job, Internship",
+    "majors": "Chemistry, Computer Engineering, Computer Programming, Computer Science, Computer Systems Networking & Telecommunications, Electrical Engineering, General Engineering, Information Systems Management, Materials Science & Engineering, Mathematics, Mechanical Engineering, Physics, Software Design",
+    "website": "http://curtisswright.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Cushing Terrell",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Architecture and Planning",
+    "job_types": "Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
-    "name": "DC Engineering PC",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
-    "name": "DCI Engineers",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "Civil Engineering Project Manager, BIM Designer, Structural Engineering Project Manager, Civil Project Engineer, Structural Project Engineer",
-    "website": ""
+    "website": "https://www.cushingterrell.com/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "David Evans and Associates, Inc.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
     "job_types": "General Hiring",
-    "website": ""
+    "majors": "All Engineering Majors / Not Specified",
+    "website": "https://www.deainc.com/",
+    "on_campus_interviews": "No"
   },
   {
-    "name": "EPC Services Company",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "name": "DC Engineering PC",
+    "booth": "TBD",
+    "industry": "Engineering & Construction",
+    "job_types": "Job, Internship",
+    "majors": "Biomedical Engineering, Civil/Environmental Engineering, Computer Engineering, Construction Engineering, Electrical Engineering, General Engineering, Materials Science & Engineering, Mechanical Engineering",
+    "website": "http://www.dcengineering.net",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "DCI Engineers",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering",
+    "website": "http://www.dci-engineers.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Electrical Consultants, Inc.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Energy",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
+    "website": "https://eciusa.com/",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "EPC Services Company",
+    "booth": "TBD",
+    "industry": "Engineering & Construction",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.eciusa.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "FOCUS Consulting",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "Accountancy BA, Accountancy BBA, Accountancy/Finance BBA, Business Administration, Business Administration Bba, Business Administration F/T, Business Administration P/T, Civil Engineering, Civil Engineering BS, Civil Engineering, MEngr, Civil Engineering, MS, Engineering, Engineering Bs, Entrepreneurship Mgmt BBA, General Business, General Business BA, General Business BBA, General Business BS, Human Resource Management BA, Human Resource Management BBA, Human Resource Management BS, Management BBA, Marketing BBA, Pre-Bus: Accountancy, Pre-Bus: Business Admin, Pre-Bus: Business Economics, Pre-Bus: Entrep Management, Pre-Bus: Finance, Pre-Bus: HR Management, Pre-Business, Pre-Business Accountancy, Pre-Business Administration, Pre-Business Economics, Pre-Business Finance, Pre-Business Marketing, Pre-Engineering, Pre-Entrepreneurship Mgmt, Pre-Human Resource Management, Project Management M-Online, Project Mgmt Bach-Online",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
-    "name": "FTI",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Construction Engineering, General Engineering",
+    "website": "http://focus-es.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Framatome Inc.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Utilities and Renewable Energy",
+    "job_types": "Job, Internship",
+    "majors": "Computer Engineering, Electrical Engineering, Mechanical Engineering, Physics",
+    "website": "https://www.nuclearcareers.com",
+    "on_campus_interviews": "Yes"
   },
   {
-    "name": "GSE Construction Company, Inc.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "name": "FTI",
+    "booth": "TBD",
+    "industry": "Construction",
+    "job_types": "Job, Internship",
+    "majors": "Construction Engineering, Electrical Engineering, General Engineering, Mechanical Engineering",
+    "website": "https://www.faithtechinc.com/",
+    "on_campus_interviews": "Yes"
   },
   {
     "name": "Gayle Manufacturing Company",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Manufacturing",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.gaylemfg.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "GeoTek",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.geotekusa.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Gerding Builders, LLC",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Construction",
+    "job_types": "Job",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.gerdingbuilders.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Granite",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Construction",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "https://www.graniteconstruction.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Great West Engineering, Inc.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "Civil Engineering",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
+    "majors": "Biomedical Engineering, Civil/Environmental Engineering, Computer Engineering, Construction Engineering, Electrical Engineering, General Engineering, Materials Science & Engineering, Mechanical Engineering",
+    "website": "http://www.greatwesteng.com",
+    "on_campus_interviews": "No"
   },
   {
-    "name": "HDR, Inc.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
-    "name": "HMH Engineering",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "name": "GSE Construction Company, Inc.",
+    "booth": "TBD",
+    "industry": "Construction",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Construction Engineering, General Engineering, Mechanical Engineering",
+    "website": "http://www.gseconstruction.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Hamilton Construction Co.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Construction",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Construction Engineering, General Engineering, Mechanical Engineering",
+    "website": "http://www.hamil.com",
+    "on_campus_interviews": "Yes"
   },
   {
     "name": "Harder Mechanical Contractors",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "Civil Engineering, Civil Engineering BS, Construction Management, Construction Mgmt BS, Mechanical Engineering, Mechanical Engineering BS",
-    "job_types": "Field Engineer -- Recent Graduates",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Construction",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Construction Engineering, General Engineering, Mechanical Engineering",
+    "website": "http://www.harder.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Hargis Engineers",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Engineering & Construction",
+    "job_types": "Internship",
+    "majors": "Electrical Engineering, Mechanical Engineering",
+    "website": "https://cm.hargis.biz/interns/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Harris",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Construction",
+    "job_types": "Job, Internship",
+    "majors": "Construction Engineering, Electrical Engineering, Mechanical Engineering",
+    "website": "https://www.harriscompany.com/",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "HDR, Inc.",
+    "booth": "TBD",
+    "industry": "Design",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "https://www.hdrinc.com",
+    "on_campus_interviews": "Yes"
   },
   {
     "name": "Hill & Peterson AFB Civilian Engineering",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Engineering & Construction",
+    "job_types": "Job, Internship",
+    "majors": "Biomedical Engineering, Civil/Environmental Engineering, Computer Engineering, Computer Programming, Computer Science, Computer Systems Networking & Telecommunications, Construction Engineering, Cyber Security, Data Science, Electrical Engineering, General Engineering, Information Systems Management, Materials Science & Engineering, Mechanical Engineering, Software Design",
+    "website": "https://afciviliancareers.com/",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "HMH Engineering",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.hmh-llc.com/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Hoffman Construction Company",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "Civil Engineering, Civil Engineering BS, Computer Engineering BS, Computer Science BS, Construction Management, Construction Mgmt BS, Data Science MS, Electrical Engineering, Electrical Engineering BS, Engineering, Engineering Bs, Engineering Undeclared, Environ & Occup Health BS, Mathematical Sciences BS, Mathematics, Mathematics BA, Mathematics BS, Mechanical Engineering, Mechanical Engineering BS",
-    "job_types": "Project Engineer (0-3 Years' Experience) - OR, Project Engineer (0-3 Years' Experience) - AZ, Project Engineer (0-3 Years' Experience) - WA, Project Engineer (0-3 Years' Experience) - ID",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Construction",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Computer Engineering, Computer Programming, Computer Science, Computer Systems Networking & Telecommunications, Construction Engineering, Cyber Security, Data Science, Electrical Engineering, General Engineering, Information Systems Management, Materials Science & Engineering, Mathematics, Mechanical Engineering, Software Design",
+    "website": "http://www.hoffmancorp.com",
+    "on_campus_interviews": "Yes"
   },
   {
     "name": "Horrocks",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering",
+    "website": "http://www.horrocksengineers.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Idaho National Laboratory",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Research",
+    "job_types": "Job, Internship, Cooperative Education, Experiential Learning, Fellowship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "https://www.inl.gov/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Idaho Power Company",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Other Industries",
+    "job_types": "Internship",
+    "majors": "Civil/Environmental Engineering, Electrical Engineering, General Engineering, Mechanical Engineering",
+    "website": "http://idahopower.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Idaho Transportation Department",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Government - Local, State & Federal",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://itd.idaho.gov/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "J.F. Brennan Company",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Construction",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Construction Engineering, General Engineering",
+    "website": "https://www.jfbrennan.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Janicki Industries",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "NC Engineer, Quality Engineer",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Manufacturing",
+    "job_types": "Job, Internship",
+    "majors": "General Engineering, Materials Science & Engineering, Mechanical Engineering",
+    "website": "http://www.janicki.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Johnson Barrow Inc",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Construction",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
-    "name": "KLA Corporation",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
-    "name": "KM Engineering",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
-    "name": "KPFF Consulting Engineers",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.jbarrow.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Keller Associates, Inc.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "Civil Engineering Student Intern, Transportation/Civil Project Engineer (EI), Water/Wastewater Project Engineer (EI)",
-    "website": ""
+    "website": "http://www.kellerassociates.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Kimley-Horn",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering",
+    "website": "http://www.kimley-horn.com",
+    "on_campus_interviews": "Yes"
   },
   {
     "name": "Kittelson & Associates, Inc.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.kittelson.com",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "KLA Corporation",
+    "booth": "TBD",
+    "industry": "Manufacturing",
+    "job_types": "Job, Internship",
+    "majors": "Chemistry, Computer Engineering, Computer Programming, Computer Science, Electrical Engineering, Materials Science & Engineering, Mechanical Engineering, Physics",
+    "website": "https://careers.kla.com/",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "KM Engineering",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering",
+    "website": "http://www.kmengllp.com",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "KPFF Consulting Engineers",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Construction Engineering",
+    "website": "http://www.kpff.com/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Lam Research Corporation",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Manufacturing",
+    "job_types": "Job, Internship",
+    "majors": "Chemistry, Electrical Engineering, Materials Science & Engineering, Mathematics, Mechanical Engineering, Physics",
+    "website": "http://lamresearch.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Lumos & Associates",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
     "majors": "Civil Engineering, Civil Engineering BS, Civil Engineering, MS",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://lumosinc.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Micron Technology Inc.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Electronic & Computer Hardware",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.micron.com/universityrecruiting",
+    "on_campus_interviews": "Yes"
   },
   {
     "name": "Mission Critical Group",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Manufacturing",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "https://missioncriticalgroup.com/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Mitsubishi Power Americas, Inc.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Energy",
+    "job_types": "Job",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "https://power.mhi.com/regions/amer/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Morrison-Maierle",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
-    "name": "NV5",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job",
+    "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
+    "website": "http://www.m-m.net",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Nasland Engineering",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.nasland.com/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Naval Nuclear Laboratory",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Defense",
+    "job_types": "Job, Internship",
+    "majors": "Biomedical Engineering, Chemistry, Civil/Environmental Engineering, Computer Engineering, Computer Programming, Computer Science, Computer Systems Networking & Telecommunications, Construction Engineering, Cyber Security, Data Science, Electrical Engineering, General Engineering, Information Systems Management, Materials Science & Engineering, Mathematics, Mechanical Engineering, Physics, Software Design",
+    "website": "https://navalnuclearlab.energy.gov/",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "NV5",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, General Engineering",
+    "website": "http://www.nv5.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "NxEdge, Inc.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Manufacturing",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.nxedgeinc.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Plexus Corp.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Manufacturing",
+    "job_types": "Internship",
     "majors": "Biomedical Engineering, Business Administration, Computer Engineering BS, Computer Engineering, MEngr, Computer Engineering, MS, Electrical & Computer Engr MS, Electrical & Computer MEngr, Electrical Engineering, Electrical Engineering BS, Electrical Engineering, MEngr, Electrical Engineering, MS, Engineering, Engineering Bs, Finance BBA, Mechanical Engineering, Mechanical Engineering BS, Mechanical Engineering, MEngr, Supply Chain Management BBA",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.plexus.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Prime Controls",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Other Industries",
+    "job_types": "Job",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.prime-controls.com/careers",
+    "on_campus_interviews": "Yes"
   },
   {
     "name": "Provost & Pritchard Consulting Group",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "Biology BS, Biology, MA, Biology, MS, Civil Engineering, Civil Engineering BS, Civil Engineering, MS, Electrical Engineering, Electrical Engineering BS, Electrical Engineering, MS, Environmental Science BS, Geology, MS, Urban Studies & Community Dev",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job",
+    "majors": "Civil/Environmental Engineering, Electrical Engineering, General Engineering",
+    "website": "https://www.provostandpritchard.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Puget Sound Naval Shipyard and Intermediate Maintenance Facility",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "Entry Level Engineer",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Defense",
+    "job_types": "Job",
+    "majors": "Biomedical Engineering, Civil/Environmental Engineering, Computer Engineering, Construction Engineering, Electrical Engineering, General Engineering, Materials Science & Engineering, Mechanical Engineering",
+    "website": "https://www.navsea.navy.mil/home/shipyards/psns-imf/",
+    "on_campus_interviews": "Yes"
   },
   {
     "name": "Quality Electric",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Construction",
+    "job_types": "Job",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "https://qeidaho.com/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Quanta Infrastructure Solutions Group",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
-    "name": "RH2 Engineering, Inc.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
-    "name": "RTM Engineering Consultants, LLC",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "Project (Structural) Internship, Electrical Engineer I, Project (MEP) internship, Project (Civil) Internship, Civil Engineer I, Mechanical Engineer I, Design Engineer",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Engineering & Construction",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
+    "website": "https://quantaisg.com/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Record Steel and Construction, Inc dba RSCI",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Other Industries",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Computer Systems Networking & Telecommunications, Construction Engineering, Electrical Engineering, Materials Science & Engineering, Mechanical Engineering",
+    "website": "http://WWW.rscigroup.com",
+    "on_campus_interviews": "No"
   },
   {
-    "name": "SSOE Group",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "name": "RH2 Engineering, Inc.",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
+    "website": "http://www.rh2.com",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "RTM Engineering Consultants, LLC",
+    "booth": "TBD",
+    "industry": "Engineering & Construction",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
+    "website": "https://rtmec.com/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Schweitzer Engineering Laboratories",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Electronic & Computer Hardware",
+    "job_types": "Job, Internship",
+    "majors": "Computer Engineering, Computer Science, Electrical Engineering",
+    "website": "http://www.selinc.com",
+    "on_campus_interviews": "Yes"
   },
   {
     "name": "Sletten Companies",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Construction",
+    "job_types": "Internship",
+    "majors": "Civil/Environmental Engineering, Construction Engineering, Mechanical Engineering",
+    "website": "http://www.slettencompanies.com",
+    "on_campus_interviews": "Yes"
   },
   {
     "name": "Southland Industries",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Engineering & Construction",
+    "job_types": "Internship",
+    "majors": "Biomedical Engineering, Civil/Environmental Engineering, Computer Engineering, Construction Engineering, Electrical Engineering, General Engineering, Materials Science & Engineering, Mechanical Engineering",
+    "website": "https://southlandind.com/",
+    "on_campus_interviews": "Yes"
+  },
+  {
+    "name": "SSOE Group",
+    "booth": "TBD",
+    "industry": "Architecture and Planning",
+    "job_types": "Internship, Cooperative Education",
+    "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
+    "website": "http://www.ssoe.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Stantec",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
-    "name": "TD&H Engineering",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Architecture and Planning",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
+    "website": "https://www.stantec.com/en",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Tamarack Grove Engineering",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.tamarackgrove.com",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "TD&H Engineering",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
+    "majors": "All Engineering Majors / Not Specified",
+    "website": "http://www.tdhengineering.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "The Land Group",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Architecture and Planning",
+    "job_types": "Job",
+    "majors": "Civil/Environmental Engineering",
+    "website": "http://www.thelandgroupinc.com/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Tokyo Electron U.S. Holdings, Inc. (TEL)",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Manufacturing",
+    "job_types": "Job, Internship, Cooperative Education",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.tel.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Trinity Consultants",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "Environmental Engineering Consultant- Boise, ID",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Environmental Services",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Materials Science & Engineering, Mechanical Engineering",
+    "website": "http://www.trinityconsultants.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "U.S. Department of State",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Government - Local, State & Federal",
+    "job_types": "Job",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "Diplomatic Security Special Agent",
-    "website": ""
+    "website": "https://careers.state.gov",
+    "on_campus_interviews": "No"
   },
   {
     "name": "U.S. Navy",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Government - Local, State & Federal",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "Surface Warfare Officer, Supply Corps Officer, Nuclear Propulsion Officer Candidate (NUPOC) Program $30,000 Bonus Potential to Earn $200,000 While a Student, Oceanography Officer, Enlisted Opportunity",
-    "website": ""
+    "website": "https://www.navy.com/",
+    "on_campus_interviews": "Yes"
   },
   {
     "name": "Ulteig",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Utilities and Renewable Energy",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.ulteig.com/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "University of Washington, Foster School of Business",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Higher Education",
+    "job_types": "Graduate School",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "https://foster.uw.edu/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Vector Structural Engineering, LLC",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://www.vectorse.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Visual Concepts",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
-    "name": "WSB & Associates, Inc.",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
-  },
-  {
-    "name": "WSP",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
-    "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "booth": "TBD",
+    "industry": "Internet & Software",
+    "job_types": "Job, Internship",
+    "majors": "Computer Programming, Computer Science, Electrical Engineering",
+    "website": "https://vcentertainment.com/",
+    "on_campus_interviews": "Yes"
   },
   {
     "name": "Washington State Department of Transportation",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Government - Local, State & Federal",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "http://wsdotjobs.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Wright Brothers, The Building Company, Eagle LLC",
-    "booth": "Assigned at Event",
-    "industry": "Engineering & Tech",
+    "booth": "TBD",
+    "industry": "Construction",
+    "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
-    "job_types": "General Hiring",
-    "website": ""
+    "website": "https://wbnation.com/",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "WSB & Associates, Inc.",
+    "booth": "TBD",
+    "industry": "Civil Engineering",
+    "job_types": "Internship",
+    "majors": "Civil/Environmental Engineering, Construction Engineering, Electrical Engineering, General Engineering, Materials Science & Engineering, Mechanical Engineering",
+    "website": "http://www.wsbeng.com",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "WSP",
+    "booth": "TBD",
+    "industry": "Engineering & Construction",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Construction Engineering, Electrical Engineering, Materials Science & Engineering, Mechanical Engineering",
+    "website": "https://www.wsp.com/en-us",
+    "on_campus_interviews": "No"
   }
 ]
