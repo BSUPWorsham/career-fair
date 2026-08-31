@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering Career Fair Directory</title>
+    <title>Boise State College of Engineering - Career Fair Directory</title>
 
+    <!-- Tailwind CSS & DataTables CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                bsuBlue: '#0033A0',
+                bsuOrange: '#D64527',
+              }
+            }
+          }
+        }
+    </script>
+
     <style>
-        /* Custom DataTables Styling Adjustments */
+        /* Custom DataTables Styling for Boise State Theme */
         .dataTables_wrapper .dataTables_filter input {
           border: 1px solid #cbd5e1;
           border-radius: 0.375rem;
@@ -18,49 +32,74 @@
           outline: none;
         }
         .dataTables_wrapper .dataTables_filter input:focus {
-          border-color: #2563eb;
-          box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+          border-color: #0033A0;
+          box-shadow: 0 0 0 2px rgba(0, 51, 160, 0.2);
         }
         .dataTables_wrapper .dataTables_length select {
           border: 1px solid #cbd5e1;
           border-radius: 0.375rem;
           padding: 0.3rem 0.6rem;
         }
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+          background: #0033A0 !important;
+          color: white !important;
+          border: 1px solid #0033A0 !important;
+          border-radius: 0.375rem;
+        }
+        .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+          background: #D64527 !important;
+          color: white !important;
+          border: 1px solid #D64527 !important;
+          border-radius: 0.375rem;
+        }
         table.dataTable tbody tr:hover {
           background-color: #f8fafc !important;
         }
         table.dataTable thead th {
-          border-bottom: 2px solid #e2e8f0 !important;
+          border-bottom: 2px solid #0033A0 !important;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 min-h-screen p-4 md:p-8">
+<body class="bg-slate-100 text-slate-800 min-h-screen p-4 md:p-8">
 
-<div class="max-w-7xl mx-auto bg-white rounded-xl shadow-md p-6 md:p-8 border border-slate-100">
-    <header class="border-b border-slate-200 pb-6 mb-6">
-        <h1 class="text-3xl font-extrabold text-blue-900 tracking-tight">College of Engineering Career Fair</h1>
-        <p class="text-slate-600 mt-2">Search attending employers, booth assignments, hiring preferences, target majors, and on-campus interview availability.</p>
+<div class="max-w-7xl mx-auto bg-white rounded-xl shadow-lg border-t-8 border-bsuOrange overflow-hidden">
+
+    <!-- Boise State Header Banner -->
+    <header class="bg-bsuBlue text-white p-6 md:p-8">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+                <span class="text-bsuOrange font-bold uppercase tracking-widest text-xs">Boise State University</span>
+                <h1 class="text-3xl font-extrabold tracking-tight mt-1">College of Engineering Career Fair</h1>
+                <p class="text-blue-100 text-sm mt-1">Attending Employers Directory & On-Campus Interview Details</p>
+            </div>
+        </div>
     </header>
 
-    <div class="overflow-x-auto">
-        <table id="directoryTable" class="w-full text-left border-collapse display">
-            <thead class="bg-slate-100 text-slate-700 text-sm uppercase font-semibold">
-            <tr>
-                <th class="p-3">Employer</th>
-                <th class="p-3">Booth</th>
-                <th class="p-3">Industry</th>
-                <th class="p-3">Hiring For</th>
-                <th class="p-3">Target Majors</th>
-                <th class="p-3">Company Website</th>
-                <th class="p-3">On-Campus Interviews</th>
-            </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-200 text-sm">
-            </tbody>
-        </table>
+    <!-- Main Content Body -->
+    <div class="p-6 md:p-8">
+        <div class="overflow-x-auto">
+            <table id="directoryTable" class="w-full text-left border-collapse display">
+                <thead class="bg-slate-50 text-bsuBlue text-sm uppercase font-bold">
+                <tr>
+                    <th class="p-3">Employer</th>
+                    <th class="p-3">Booth</th>
+                    <th class="p-3">Industry</th>
+                    <th class="p-3">Hiring For</th>
+                    <th class="p-3">Target Majors</th>
+                    <th class="p-3">Company Website</th>
+                    <th class="p-3">On-Campus Interviews</th>
+                </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-sm">
+                <!-- Dynamic data loaded here -->
+                </tbody>
+            </table>
+        </div>
     </div>
+
 </div>
 
+<!-- jQuery & DataTables JS -->
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 
@@ -79,7 +118,7 @@
               {
                 data: 'booth',
                 render: function(data) {
-                  return `<span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-1 rounded-full border border-blue-200">${data}</span>`;
+                  return `<span class="inline-block bg-blue-50 text-bsuBlue text-xs font-bold px-2.5 py-1 rounded-full border border-blue-200">${data}</span>`;
                 }
               },
               { data: 'industry' },
@@ -90,7 +129,7 @@
                 render: function(data) {
                   if (!data) return '<span class="text-slate-400">N/A</span>';
                   let url = data.startsWith('http') ? data : 'https://' + data;
-                  return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline font-medium break-all">${data}</a>`;
+                  return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-bsuBlue hover:text-bsuOrange hover:underline font-semibold break-all">${data}</a>`;
                 }
               },
               {
@@ -98,9 +137,9 @@
                 render: function(data) {
                   let isYes = data === 'Yes';
                   let badgeStyles = isYes
-                    ? 'bg-emerald-100 text-emerald-800 border-emerald-300'
+                    ? 'bg-orange-50 text-bsuOrange border-bsuOrange font-bold'
                     : 'bg-slate-100 text-slate-600 border-slate-200';
-                  return `<span class="inline-block ${badgeStyles} text-xs font-bold px-3 py-1 rounded-full border">${data}</span>`;
+                  return `<span class="inline-block ${badgeStyles} text-xs px-3 py-1 rounded-full border">${data}</span>`;
                 }
               }
             ],
