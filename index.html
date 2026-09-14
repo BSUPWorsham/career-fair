@@ -23,7 +23,6 @@
     </script>
 
     <style>
-        /* Custom DataTables Styling for Boise State Theme */
         .dataTables_wrapper .dataTables_filter input {
           border: 1px solid #cbd5e1;
           border-radius: 0.375rem;
@@ -65,7 +64,7 @@
 
 <div class="max-w-[95%] mx-auto bg-white rounded-xl shadow-lg border-t-8 border-bsuOrange overflow-hidden">
 
-    <!-- Boise State Header Banner -->
+    <!-- Header Banner -->
     <header class="bg-bsuBlue text-white p-6 md:p-8">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
@@ -100,7 +99,7 @@
                 </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-200 text-sm">
-                <!-- Dynamic data loaded here -->
+                <!-- Data loaded via jQuery fetch -->
                 </tbody>
             </table>
         </div>
@@ -108,13 +107,12 @@
 
 </div>
 
-<!-- jQuery & DataTables JS -->
+<!-- Libraries -->
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 
 <script>
     $(document).ready(function() {
-      // Helper function for boolean badges
       function renderBadge(val) {
         if (val === true) {
           return `<span class="inline-block bg-emerald-50 text-emerald-700 border-emerald-200 text-xs px-2.5 py-0.5 rounded-full border font-semibold">Yes</span>`;
@@ -130,37 +128,29 @@
           $('#directoryTable').DataTable({
             data: data,
             columns: [
-              { data: 'employer_name', className: 'font-bold text-slate-900' },
-              { data: 'employer_industry' },
+              { data: 'employer_name', defaultContent: '', className: 'font-bold text-slate-900' },
+              { data: 'employer_industry', defaultContent: '' },
               {
                 data: 'website',
+                defaultContent: '',
                 render: function(data) {
                   if (!data) return '<span class="text-slate-400">N/A</span>';
                   let url = data.startsWith('http') ? data : 'https://' + data;
                   return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-bsuBlue hover:text-bsuOrange hover:underline font-semibold">${data}</a>`;
                 }
               },
-              { data: 'division' },
-              { data: 'employment_types' },
-              { data: 'jobs_on_handshake' },
-              { data: 'job_titles' },
-              { data: 'majors' },
-              { data: 'major_groups' },
-              { data: 'combined_majors' },
-              { data: 'job_types' },
-              { data: 'school_years' },
-              {
-                data: 'us_work_authorization_required',
-                render: renderBadge
-              },
-              {
-                data: 'accepts_opt_cpt',
-                render: renderBadge
-              },
-              {
-                data: 'willing_to_sponsor',
-                render: renderBadge
-              }
+              { data: 'division', defaultContent: '' },
+              { data: 'employment_types', defaultContent: '' },
+              { data: 'jobs_on_handshake', defaultContent: '' },
+              { data: 'job_titles', defaultContent: '' },
+              { data: 'majors', defaultContent: '' },
+              { data: 'major_groups', defaultContent: '' },
+              { data: 'combined_majors', defaultContent: '' },
+              { data: 'job_types', defaultContent: '' },
+              { data: 'school_years', defaultContent: '' },
+              { data: 'us_work_authorization_required', defaultContent: '', render: renderBadge },
+              { data: 'accepts_opt_cpt', defaultContent: '', render: renderBadge },
+              { data: 'willing_to_sponsor', defaultContent: '', render: renderBadge }
             ],
             pageLength: 25,
             responsive: false,

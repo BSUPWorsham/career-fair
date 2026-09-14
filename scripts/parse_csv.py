@@ -3,16 +3,15 @@ import json
 import os
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 
-CSV_PATH = os.path.join(PROJECT_ROOT, 'data', 'employers.csv')
-OUTPUT_PATH = os.path.join(PROJECT_ROOT, 'employers.json')
+# Adjust paths relative to convert.py
+CSV_PATH = os.path.join(SCRIPT_DIR, 'data', 'employers.csv')
+OUTPUT_PATH = os.path.join(SCRIPT_DIR, 'employers.json')
 
 def clean_val(val):
     if val is None:
         return ""
-    cleaned = " ".join(str(val).strip().split())
-    return cleaned
+    return " ".join(str(val).strip().split())
 
 def parse_bool(val):
     cleaned = clean_val(val).lower()
@@ -20,7 +19,7 @@ def parse_bool(val):
         return True
     if cleaned in ["false", "no", "0"]:
         return False
-    return val  # Return cleaned string if value is missing or non-boolean
+    return val
 
 def process_handshake_csv():
     if not os.path.exists(CSV_PATH):
