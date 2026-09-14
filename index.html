@@ -100,7 +100,6 @@
                     <th>Website</th>
                     <th>Division</th>
                     <th>Employment Types</th>
-                    <th>Job Titles</th>
                     <th>Major Groups</th>
                     <th>Combined Majors</th>
                     <th>Job Types</th>
@@ -165,7 +164,6 @@
               },
               { data: row => row.division || '', render: renderTruncated },
               { data: row => row.employment_types || '' },
-              { data: row => row.job_titles || '', render: renderTruncated },
               { data: row => row.major_groups || '', render: renderTruncated },
               { data: row => row.combined_majors || '', render: renderTruncated },
               { data: row => row.job_types || '' },
@@ -185,7 +183,7 @@
         })
         .catch(err => {
           console.error("Error loading employers.json:", err);
-          $('tbody').html('<tr><td colspan="13" class="p-4 text-center text-red-600 font-semibold">Failed to load directory data. Please ensure employers.json exists.</td></tr>');
+          $('tbody').html('<tr><td colspan="12" class="p-4 text-center text-red-600 font-semibold">Failed to load directory data. Please ensure employers.json exists.</td></tr>');
         });
     });
 </script>

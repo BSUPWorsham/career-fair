@@ -15,7 +15,14 @@ MAJOR_ABBREVIATIONS = {
     r'\bElectrical Engineering\b': 'EE',
     r'\bEngineering Plus\b': 'E+',
     r'\bEngineering \+\b': 'E+',
-    r'\bConstruction Management\b': 'CM'
+    r'\bConstruction Management\b': 'CM',
+    r'\bCivil/Environmental Engineering\b': 'CE/Env',
+    r'\bConstruction Engineering\b': 'ConstE',
+    r'\bGeneral Engineering\b': 'GenE',
+    r'\bComputer Engineering\b': 'CompE',
+    r'\bMaterials Science & Engr\b': 'MSE',
+    r'\bMaterials Science & Engineering\b': 'MSE',
+    r'\bMaterials Sci & Engr\b': 'MSE'
 }
 
 def clean_val(val):
@@ -60,7 +67,6 @@ def process_handshake_csv():
                 "website": clean_val(row.get("Website", "")),
                 "division": clean_val(row.get("Division", "")),
                 "employment_types": clean_val(row.get("Employment Types", "")),
-                "job_titles": clean_val(row.get("Job Titles", "")),
                 "major_groups": abbreviate_majors(row.get("Major Groups", "")),
                 "combined_majors": abbreviate_majors(row.get("Combined Majors", "")),
                 "job_types": clean_val(row.get("Job Types", "")),
