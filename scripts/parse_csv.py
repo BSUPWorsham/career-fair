@@ -1,19 +1,35 @@
 import csv
 import json
 import os
+import re
 
-# Get the directory where parse_csv.py lives (/scripts)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-
-# Navigate up to project root, then target data/employers.csv
 PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, '..'))
 CSV_PATH = os.path.join(PROJECT_ROOT, 'data', 'employers.csv')
 OUTPUT_PATH = os.path.join(PROJECT_ROOT, 'employers.json')
+
+MAJOR_ABBREVIATIONS = {
+    r'\bCivil Engineering\b': 'CE',
+    r'\bMechanical Engineering\b': 'ME',
+    r'\bComputer Science\b': 'CS',
+    r'\bElectrical Engineering\b': 'EE',
+    r'\bEngineering Plus\b': 'E+',
+    r'\bEngineering \+\b': 'E+',
+    r'\bConstruction Management\b': 'CM'
+}
 
 def clean_val(val):
     if val is None:
         return ""
     return " ".join(str(val).strip().split())
+
+def abbreviate_majors(text):
+    if not text:
+        return ""
+    cleaned = clean_val(text)
+    for pattern, abbr in MAJOR_ABBREVIATIONS.items():
+        cleaned = re.sub(pattern, abbr, cleaned, flags=re.IGNORECASE)
+    return cleaned
 
 def parse_bool(val):
     cleaned = clean_val(val).lower()
@@ -26,7 +42,6 @@ def parse_bool(val):
 def process_handshake_csv():
     if not os.path.exists(CSV_PATH):
         print(f"Error: Could not find '{CSV_PATH}'.")
-        print(f"Expected location: {CSV_PATH}")
         return
 
     employers_list = []
@@ -45,11 +60,9 @@ def process_handshake_csv():
                 "website": clean_val(row.get("Website", "")),
                 "division": clean_val(row.get("Division", "")),
                 "employment_types": clean_val(row.get("Employment Types", "")),
-                "jobs_on_handshake": clean_val(row.get("Jobs on Handshake", "")),
                 "job_titles": clean_val(row.get("Job Titles", "")),
-                "majors": clean_val(row.get("Majors", "")),
-                "major_groups": clean_val(row.get("Major Groups", "")),
-                "combined_majors": clean_val(row.get("Combined Majors", "")),
+                "major_groups": abbreviate_majors(row.get("Major Groups", "")),
+                "combined_majors": abbreviate_majors(row.get("Combined Majors", "")),
                 "job_types": clean_val(row.get("Job Types", "")),
                 "school_years": clean_val(row.get("School Years", "")),
                 "us_work_authorization_required": parse_bool(row.get("US work authorization required?", "")),
@@ -61,7 +74,7 @@ def process_handshake_csv():
     with open(OUTPUT_PATH, 'w', encoding='utf-8') as f:
         json.dump(employers_list, f, indent=2)
 
-    print(f"Success! Processed {len(employers_list)} employers into {OUTPUT_PATH}")
+    print(f"Success! Processed {len(employers_list)} employers.")
 
 if __name__ == '__main__':
     process_handshake_csv()

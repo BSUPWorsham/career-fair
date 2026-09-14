@@ -23,15 +23,13 @@
     </script>
 
     <style>
-        /* Compact cell padding to eliminate excess white space */
         table.dataTable th,
         table.dataTable td {
           padding: 8px 10px !important;
-          font-size: 0.8125rem; /* 13px */
+          font-size: 0.8125rem;
           vertical-align: middle;
         }
 
-        /* Prevent long strings from blowing out column widths */
         .cell-truncate {
           max-width: 180px;
           white-space: nowrap;
@@ -39,7 +37,6 @@
           text-overflow: ellipsis;
         }
 
-        /* Filter inputs & Controls styling */
         .dataTables_wrapper .dataTables_filter input {
           border: 1px solid #cbd5e1;
           border-radius: 0.375rem;
@@ -103,9 +100,7 @@
                     <th>Website</th>
                     <th>Division</th>
                     <th>Employment Types</th>
-                    <th>Handshake Jobs</th>
                     <th>Job Titles</th>
-                    <th>Majors</th>
                     <th>Major Groups</th>
                     <th>Combined Majors</th>
                     <th>Job Types</th>
@@ -141,7 +136,7 @@
 
       function renderTruncated(text) {
         if (!text) return '<span class="text-slate-400">N/A</span>';
-        let clean = $('<div>').text(text).html(); // escape HTML
+        let clean = $('<div>').text(text).html();
         return `<div class="cell-truncate" title="${clean}">${clean}</div>`;
       }
 
@@ -170,9 +165,7 @@
               },
               { data: row => row.division || '', render: renderTruncated },
               { data: row => row.employment_types || '' },
-              { data: row => row.jobs_on_handshake || '' },
               { data: row => row.job_titles || '', render: renderTruncated },
-              { data: row => row.majors || '', render: renderTruncated },
               { data: row => row.major_groups || '', render: renderTruncated },
               { data: row => row.combined_majors || '', render: renderTruncated },
               { data: row => row.job_types || '' },
@@ -192,7 +185,7 @@
         })
         .catch(err => {
           console.error("Error loading employers.json:", err);
-          $('tbody').html('<tr><td colspan="15" class="p-4 text-center text-red-600 font-semibold">Failed to load directory data. Please ensure employers.json exists.</td></tr>');
+          $('tbody').html('<tr><td colspan="13" class="p-4 text-center text-red-600 font-semibold">Failed to load directory data. Please ensure employers.json exists.</td></tr>');
         });
     });
 </script>
