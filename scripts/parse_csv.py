@@ -2,11 +2,13 @@ import csv
 import json
 import os
 
+# Get the directory where parse_csv.py lives (/scripts)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Adjust paths relative to convert.py
-CSV_PATH = os.path.join(SCRIPT_DIR, 'data', 'employers.csv')
-OUTPUT_PATH = os.path.join(SCRIPT_DIR, 'employers.json')
+# Navigate up to project root, then target data/employers.csv
+PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, '..'))
+CSV_PATH = os.path.join(PROJECT_ROOT, 'data', 'employers.csv')
+OUTPUT_PATH = os.path.join(PROJECT_ROOT, 'employers.json')
 
 def clean_val(val):
     if val is None:
@@ -23,7 +25,8 @@ def parse_bool(val):
 
 def process_handshake_csv():
     if not os.path.exists(CSV_PATH):
-        print(f"Error: Could not find '{CSV_PATH}'. Place your CSV in the data/ directory.")
+        print(f"Error: Could not find '{CSV_PATH}'.")
+        print(f"Expected location: {CSV_PATH}")
         return
 
     employers_list = []
