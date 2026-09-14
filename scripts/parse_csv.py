@@ -9,9 +9,18 @@ CSV_PATH = os.path.join(PROJECT_ROOT, 'data', 'employers.csv')
 OUTPUT_PATH = os.path.join(PROJECT_ROOT, 'employers.json')
 
 def clean_val(val):
-    if not val:
+    if val is None:
         return ""
-    return " ".join(str(val).strip().split())
+    cleaned = " ".join(str(val).strip().split())
+    return cleaned
+
+def parse_bool(val):
+    cleaned = clean_val(val).lower()
+    if cleaned in ["true", "yes", "1"]:
+        return True
+    if cleaned in ["false", "no", "0"]:
+        return False
+    return val  # Return cleaned string if value is missing or non-boolean
 
 def process_handshake_csv():
     if not os.path.exists(CSV_PATH):
@@ -28,25 +37,22 @@ def process_handshake_csv():
             if not name:
                 continue
 
-            industry = clean_val(row.get("Industry", "")) or "Engineering & Tech"
-            website = clean_val(row.get("Website", ""))
-            job_types = clean_val(row.get("Job Types", "")) or clean_val(row.get("Employment Types", "")) or "General Hiring"
-
-            majors = clean_val(row.get("Major Groups", "")) or clean_val(row.get("Majors", "")) or clean_val(row.get("Combined Majors", ""))
-            if not majors:
-                majors = "All Engineering Majors / Not Specified"
-
-            raw_interviews = clean_val(row.get("Interviews ", "")).lower()
-            on_campus_interviews = "Yes" if raw_interviews == "yes" else "No"
-
             employer_entry = {
-                "name": name,
-                "booth": "TBD",
-                "industry": industry,
-                "job_types": job_types,
-                "majors": majors,
-                "website": website,
-                "on_campus_interviews": on_campus_interviews
+                "employer_name": name,
+                "employer_industry": clean_val(row.get("Employer Industry", "")),
+                "website": clean_val(row.get("Website", "")),
+                "division": clean_val(row.get("Division", "")),
+                "employment_types": clean_val(row.get("Employment Types", "")),
+                "jobs_on_handshake": clean_val(row.get("Jobs on Handshake", "")),
+                "job_titles": clean_val(row.get("Job Titles", "")),
+                "majors": clean_val(row.get("Majors", "")),
+                "major_groups": clean_val(row.get("Major Groups", "")),
+                "combined_majors": clean_val(row.get("Combined Majors", "")),
+                "job_types": clean_val(row.get("Job Types", "")),
+                "school_years": clean_val(row.get("School Years", "")),
+                "us_work_authorization_required": parse_bool(row.get("US work authorization required?", "")),
+                "accepts_opt_cpt": parse_bool(row.get("Accepts OPT/CPT candidates?", "")),
+                "willing_to_sponsor": parse_bool(row.get("Willing to sponsor candidate?", ""))
             }
             employers_list.append(employer_entry)
 

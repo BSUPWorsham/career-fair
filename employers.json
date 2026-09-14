@@ -2,7 +2,7 @@
   {
     "name": "Ackerman-Estvold",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Construction Engineering, General Engineering",
     "website": "https://www.ackerman-estvold.com/",
@@ -11,7 +11,7 @@
   {
     "name": "Advanced Engineering and Environmental Services, LLC (AE2S)",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.ae2s.com",
@@ -20,7 +20,7 @@
   {
     "name": "AKS Engineering & Forestry LLC",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Construction Engineering, Electrical Engineering, Mechanical Engineering",
     "website": "http://www.aks-eng.com",
@@ -29,26 +29,44 @@
   {
     "name": "Allwest Testing & Engineering",
     "booth": "TBD",
-    "industry": "Engineering & Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering",
     "website": "http://www.allwesttesting.com",
     "on_campus_interviews": "No"
   },
   {
+    "name": "Apex Companies, LLC",
+    "booth": "TBD",
+    "industry": "Engineering & Tech",
+    "job_types": "Job, Internship",
+    "majors": "Civil/Environmental Engineering, Construction Engineering",
+    "website": "https://www.apexcos.com",
+    "on_campus_interviews": "No"
+  },
+  {
     "name": "Applied Materials",
     "booth": "TBD",
-    "industry": "Electronic & Computer Hardware",
+    "industry": "Engineering & Tech",
     "job_types": "Internship",
     "majors": "Computer Engineering, Electrical Engineering, General Engineering, Materials Science & Engineering, Mechanical Engineering",
     "website": "https://www.appliedmaterials.com/",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
   },
   {
     "name": "Ardurra",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
+    "majors": "All Engineering Majors / Not Specified",
+    "website": "https://ardurra.com/",
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "Ardurra",
+    "booth": "TBD",
+    "industry": "Engineering & Tech",
+    "job_types": "Part-Time",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://ardurra.com/",
     "on_campus_interviews": "No"
@@ -56,25 +74,16 @@
   {
     "name": "Army Corps of Engineers",
     "booth": "TBD",
-    "industry": "Government - Local, State & Federal",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Electrical Engineering, Mechanical Engineering",
     "website": "http://www.nwd.usace.army.mil/Careers/HIP",
     "on_campus_interviews": "No"
   },
   {
-    "name": "ASM",
-    "booth": "TBD",
-    "industry": "Electronic & Computer Hardware",
-    "job_types": "Job",
-    "majors": "All Engineering Majors / Not Specified",
-    "website": "http://careers.asm.com",
-    "on_campus_interviews": "No"
-  },
-  {
     "name": "ATS Inland NW",
     "booth": "TBD",
-    "industry": "Engineering & Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Computer Engineering, Construction Engineering, Electrical Engineering, Mechanical Engineering",
     "website": "http://www.atsinlandnw.com",
@@ -83,16 +92,25 @@
   {
     "name": "Border States",
     "booth": "TBD",
-    "industry": "Wholesale Trade",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://borderstates.com/careers",
     "on_campus_interviews": "No"
   },
   {
+    "name": "Brown and Caldwell",
+    "booth": "TBD",
+    "industry": "Engineering & Tech",
+    "job_types": "Internship",
+    "majors": "Civil/Environmental Engineering, Construction Engineering, Electrical Engineering, General Engineering, Mechanical Engineering",
+    "website": "http://www.brownandcaldwell.com",
+    "on_campus_interviews": "No"
+  },
+  {
     "name": "C3 Civil Engineering",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://www.c3civileng.com/",
@@ -101,16 +119,16 @@
   {
     "name": "Chief Architect Software",
     "booth": "TBD",
-    "industry": "Internet & Software",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://www.chiefarchitect.com/",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
   },
   {
     "name": "City of Boise",
     "booth": "TBD",
-    "industry": "Government - Local, State & Federal",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.cityofboise.org",
@@ -119,7 +137,7 @@
   {
     "name": "Clark Pacific",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Mechanical Engineering",
     "website": "http://www.clarkpacific.com",
@@ -128,7 +146,7 @@
   {
     "name": "Clenera, LLC",
     "booth": "TBD",
-    "industry": "Utilities and Renewable Energy",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Construction Engineering, Data Science, Electrical Engineering, General Engineering, Information Systems Management, Materials Science & Engineering, Mechanical Engineering",
     "website": "http://Clenera.com",
@@ -137,16 +155,16 @@
   {
     "name": "Copper Roots",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job",
     "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
     "website": "https://www.linkedin.com/company/copper-roots-inc/",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
   },
   {
     "name": "CSHQA, Inc.",
     "booth": "TBD",
-    "industry": "Architecture and Planning",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
     "website": "http://www.cshqa.com",
@@ -155,7 +173,7 @@
   {
     "name": "Curtiss-Wright",
     "booth": "TBD",
-    "industry": "Defense",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Chemistry, Computer Engineering, Computer Programming, Computer Science, Computer Systems Networking & Telecommunications, Electrical Engineering, General Engineering, Information Systems Management, Materials Science & Engineering, Mathematics, Mechanical Engineering, Physics, Software Design",
     "website": "http://curtisswright.com",
@@ -164,7 +182,7 @@
   {
     "name": "Cushing Terrell",
     "booth": "TBD",
-    "industry": "Architecture and Planning",
+    "industry": "Engineering & Tech",
     "job_types": "Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://www.cushingterrell.com/",
@@ -173,7 +191,7 @@
   {
     "name": "David Evans and Associates, Inc.",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "General Hiring",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://www.deainc.com/",
@@ -182,7 +200,7 @@
   {
     "name": "DC Engineering PC",
     "booth": "TBD",
-    "industry": "Engineering & Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Biomedical Engineering, Civil/Environmental Engineering, Computer Engineering, Construction Engineering, Electrical Engineering, General Engineering, Materials Science & Engineering, Mechanical Engineering",
     "website": "http://www.dcengineering.net",
@@ -191,7 +209,7 @@
   {
     "name": "DCI Engineers",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering",
     "website": "http://www.dci-engineers.com",
@@ -200,7 +218,7 @@
   {
     "name": "Electrical Consultants, Inc.",
     "booth": "TBD",
-    "industry": "Energy",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
     "website": "https://eciusa.com/",
@@ -209,7 +227,7 @@
   {
     "name": "EPC Services Company",
     "booth": "TBD",
-    "industry": "Engineering & Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.eciusa.com",
@@ -218,7 +236,7 @@
   {
     "name": "FOCUS Consulting",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Construction Engineering, General Engineering",
     "website": "http://focus-es.com",
@@ -227,25 +245,25 @@
   {
     "name": "Framatome Inc.",
     "booth": "TBD",
-    "industry": "Utilities and Renewable Energy",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Computer Engineering, Electrical Engineering, Mechanical Engineering, Physics",
     "website": "https://www.nuclearcareers.com",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
   },
   {
     "name": "FTI",
     "booth": "TBD",
-    "industry": "Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Construction Engineering, Electrical Engineering, General Engineering, Mechanical Engineering",
     "website": "https://www.faithtechinc.com/",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
   },
   {
     "name": "Gayle Manufacturing Company",
     "booth": "TBD",
-    "industry": "Manufacturing",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.gaylemfg.com",
@@ -254,7 +272,7 @@
   {
     "name": "GeoTek",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.geotekusa.com",
@@ -263,7 +281,7 @@
   {
     "name": "Gerding Builders, LLC",
     "booth": "TBD",
-    "industry": "Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.gerdingbuilders.com",
@@ -272,7 +290,7 @@
   {
     "name": "Granite",
     "booth": "TBD",
-    "industry": "Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://www.graniteconstruction.com",
@@ -281,7 +299,7 @@
   {
     "name": "Great West Engineering, Inc.",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Biomedical Engineering, Civil/Environmental Engineering, Computer Engineering, Construction Engineering, Electrical Engineering, General Engineering, Materials Science & Engineering, Mechanical Engineering",
     "website": "http://www.greatwesteng.com",
@@ -290,7 +308,7 @@
   {
     "name": "GSE Construction Company, Inc.",
     "booth": "TBD",
-    "industry": "Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Construction Engineering, General Engineering, Mechanical Engineering",
     "website": "http://www.gseconstruction.com",
@@ -299,16 +317,16 @@
   {
     "name": "Hamilton Construction Co.",
     "booth": "TBD",
-    "industry": "Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Construction Engineering, General Engineering, Mechanical Engineering",
     "website": "http://www.hamil.com",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
   },
   {
     "name": "Harder Mechanical Contractors",
     "booth": "TBD",
-    "industry": "Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Construction Engineering, General Engineering, Mechanical Engineering",
     "website": "http://www.harder.com",
@@ -317,7 +335,7 @@
   {
     "name": "Hargis Engineers",
     "booth": "TBD",
-    "industry": "Engineering & Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Internship",
     "majors": "Electrical Engineering, Mechanical Engineering",
     "website": "https://cm.hargis.biz/interns/",
@@ -326,7 +344,7 @@
   {
     "name": "Harris",
     "booth": "TBD",
-    "industry": "Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Construction Engineering, Electrical Engineering, Mechanical Engineering",
     "website": "https://www.harriscompany.com/",
@@ -335,16 +353,16 @@
   {
     "name": "HDR, Inc.",
     "booth": "TBD",
-    "industry": "Design",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://www.hdrinc.com",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
   },
   {
     "name": "Hill & Peterson AFB Civilian Engineering",
     "booth": "TBD",
-    "industry": "Engineering & Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Biomedical Engineering, Civil/Environmental Engineering, Computer Engineering, Computer Programming, Computer Science, Computer Systems Networking & Telecommunications, Construction Engineering, Cyber Security, Data Science, Electrical Engineering, General Engineering, Information Systems Management, Materials Science & Engineering, Mechanical Engineering, Software Design",
     "website": "https://afciviliancareers.com/",
@@ -353,7 +371,7 @@
   {
     "name": "HMH Engineering",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.hmh-llc.com/",
@@ -362,16 +380,25 @@
   {
     "name": "Hoffman Construction Company",
     "booth": "TBD",
-    "industry": "Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Computer Engineering, Computer Programming, Computer Science, Computer Systems Networking & Telecommunications, Construction Engineering, Cyber Security, Data Science, Electrical Engineering, General Engineering, Information Systems Management, Materials Science & Engineering, Mathematics, Mechanical Engineering, Software Design",
     "website": "http://www.hoffmancorp.com",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "Holland & Hart LLP",
+    "booth": "TBD",
+    "industry": "Engineering & Tech",
+    "job_types": "Internship",
+    "majors": "Computer Engineering, Computer Science, Electrical Engineering, General Engineering, Materials Science & Engineering, Mechanical Engineering, Physics",
+    "website": "https://www.hollandhart.com/",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Horrocks",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering",
     "website": "http://www.horrocksengineers.com",
@@ -380,7 +407,7 @@
   {
     "name": "Idaho National Laboratory",
     "booth": "TBD",
-    "industry": "Research",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship, Cooperative Education, Experiential Learning, Fellowship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://www.inl.gov/",
@@ -389,7 +416,7 @@
   {
     "name": "Idaho Power Company",
     "booth": "TBD",
-    "industry": "Other Industries",
+    "industry": "Engineering & Tech",
     "job_types": "Internship",
     "majors": "Civil/Environmental Engineering, Electrical Engineering, General Engineering, Mechanical Engineering",
     "website": "http://idahopower.com",
@@ -398,7 +425,7 @@
   {
     "name": "Idaho Transportation Department",
     "booth": "TBD",
-    "industry": "Government - Local, State & Federal",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://itd.idaho.gov/",
@@ -407,16 +434,25 @@
   {
     "name": "J.F. Brennan Company",
     "booth": "TBD",
-    "industry": "Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Construction Engineering, General Engineering",
     "website": "https://www.jfbrennan.com",
     "on_campus_interviews": "No"
   },
   {
+    "name": "Jacobs",
+    "booth": "TBD",
+    "industry": "Engineering & Tech",
+    "job_types": "Job, Internship, Cooperative Education",
+    "majors": "Civil/Environmental Engineering, Construction Engineering, Electrical Engineering, Mechanical Engineering",
+    "website": "http://www.jacobs.com",
+    "on_campus_interviews": "No"
+  },
+  {
     "name": "Janicki Industries",
     "booth": "TBD",
-    "industry": "Manufacturing",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "General Engineering, Materials Science & Engineering, Mechanical Engineering",
     "website": "http://www.janicki.com",
@@ -425,7 +461,7 @@
   {
     "name": "Johnson Barrow Inc",
     "booth": "TBD",
-    "industry": "Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.jbarrow.com",
@@ -434,7 +470,7 @@
   {
     "name": "Keller Associates, Inc.",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.kellerassociates.com",
@@ -443,16 +479,16 @@
   {
     "name": "Kimley-Horn",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering",
     "website": "http://www.kimley-horn.com",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
   },
   {
     "name": "Kittelson & Associates, Inc.",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.kittelson.com",
@@ -461,7 +497,7 @@
   {
     "name": "KLA Corporation",
     "booth": "TBD",
-    "industry": "Manufacturing",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Chemistry, Computer Engineering, Computer Programming, Computer Science, Electrical Engineering, Materials Science & Engineering, Mechanical Engineering, Physics",
     "website": "https://careers.kla.com/",
@@ -470,7 +506,7 @@
   {
     "name": "KM Engineering",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering",
     "website": "http://www.kmengllp.com",
@@ -479,7 +515,7 @@
   {
     "name": "KPFF Consulting Engineers",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Construction Engineering",
     "website": "http://www.kpff.com/",
@@ -488,7 +524,7 @@
   {
     "name": "Lam Research Corporation",
     "booth": "TBD",
-    "industry": "Manufacturing",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Chemistry, Electrical Engineering, Materials Science & Engineering, Mathematics, Mechanical Engineering, Physics",
     "website": "http://lamresearch.com",
@@ -497,7 +533,7 @@
   {
     "name": "Lumos & Associates",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil Engineering, Civil Engineering BS, Civil Engineering, MS",
     "website": "http://lumosinc.com",
@@ -506,16 +542,16 @@
   {
     "name": "Micron Technology Inc.",
     "booth": "TBD",
-    "industry": "Electronic & Computer Hardware",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.micron.com/universityrecruiting",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
   },
   {
     "name": "Mission Critical Group",
     "booth": "TBD",
-    "industry": "Manufacturing",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://missioncriticalgroup.com/",
@@ -524,7 +560,7 @@
   {
     "name": "Mitsubishi Power Americas, Inc.",
     "booth": "TBD",
-    "industry": "Energy",
+    "industry": "Engineering & Tech",
     "job_types": "Job",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://power.mhi.com/regions/amer/",
@@ -533,7 +569,7 @@
   {
     "name": "Morrison-Maierle",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job",
     "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
     "website": "http://www.m-m.net",
@@ -542,7 +578,7 @@
   {
     "name": "Nasland Engineering",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.nasland.com/",
@@ -551,7 +587,7 @@
   {
     "name": "Naval Nuclear Laboratory",
     "booth": "TBD",
-    "industry": "Defense",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Biomedical Engineering, Chemistry, Civil/Environmental Engineering, Computer Engineering, Computer Programming, Computer Science, Computer Systems Networking & Telecommunications, Construction Engineering, Cyber Security, Data Science, Electrical Engineering, General Engineering, Information Systems Management, Materials Science & Engineering, Mathematics, Mechanical Engineering, Physics, Software Design",
     "website": "https://navalnuclearlab.energy.gov/",
@@ -560,7 +596,7 @@
   {
     "name": "NV5",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, General Engineering",
     "website": "http://www.nv5.com",
@@ -569,16 +605,25 @@
   {
     "name": "NxEdge, Inc.",
     "booth": "TBD",
-    "industry": "Manufacturing",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.nxedgeinc.com",
     "on_campus_interviews": "No"
   },
   {
+    "name": "Osborn Consulting",
+    "booth": "TBD",
+    "industry": "Engineering & Tech",
+    "job_types": "Job, Internship",
+    "majors": "All Engineering Majors / Not Specified",
+    "website": "http://www.osbornconsulting.com",
+    "on_campus_interviews": "No"
+  },
+  {
     "name": "Plexus Corp.",
     "booth": "TBD",
-    "industry": "Manufacturing",
+    "industry": "Engineering & Tech",
     "job_types": "Internship",
     "majors": "Biomedical Engineering, Business Administration, Computer Engineering BS, Computer Engineering, MEngr, Computer Engineering, MS, Electrical & Computer Engr MS, Electrical & Computer MEngr, Electrical Engineering, Electrical Engineering BS, Electrical Engineering, MEngr, Electrical Engineering, MS, Engineering, Engineering Bs, Finance BBA, Mechanical Engineering, Mechanical Engineering BS, Mechanical Engineering, MEngr, Supply Chain Management BBA",
     "website": "http://www.plexus.com",
@@ -587,16 +632,16 @@
   {
     "name": "Prime Controls",
     "booth": "TBD",
-    "industry": "Other Industries",
+    "industry": "Engineering & Tech",
     "job_types": "Job",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.prime-controls.com/careers",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
   },
   {
     "name": "Provost & Pritchard Consulting Group",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job",
     "majors": "Civil/Environmental Engineering, Electrical Engineering, General Engineering",
     "website": "https://www.provostandpritchard.com",
@@ -605,16 +650,16 @@
   {
     "name": "Puget Sound Naval Shipyard and Intermediate Maintenance Facility",
     "booth": "TBD",
-    "industry": "Defense",
+    "industry": "Engineering & Tech",
     "job_types": "Job",
     "majors": "Biomedical Engineering, Civil/Environmental Engineering, Computer Engineering, Construction Engineering, Electrical Engineering, General Engineering, Materials Science & Engineering, Mechanical Engineering",
     "website": "https://www.navsea.navy.mil/home/shipyards/psns-imf/",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
   },
   {
     "name": "Quality Electric",
     "booth": "TBD",
-    "industry": "Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://qeidaho.com/",
@@ -623,7 +668,7 @@
   {
     "name": "Quanta Infrastructure Solutions Group",
     "booth": "TBD",
-    "industry": "Engineering & Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
     "website": "https://quantaisg.com/",
@@ -632,7 +677,7 @@
   {
     "name": "Record Steel and Construction, Inc dba RSCI",
     "booth": "TBD",
-    "industry": "Other Industries",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Computer Systems Networking & Telecommunications, Construction Engineering, Electrical Engineering, Materials Science & Engineering, Mechanical Engineering",
     "website": "http://WWW.rscigroup.com",
@@ -641,7 +686,7 @@
   {
     "name": "RH2 Engineering, Inc.",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
     "website": "http://www.rh2.com",
@@ -650,7 +695,7 @@
   {
     "name": "RTM Engineering Consultants, LLC",
     "booth": "TBD",
-    "industry": "Engineering & Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
     "website": "https://rtmec.com/",
@@ -659,34 +704,43 @@
   {
     "name": "Schweitzer Engineering Laboratories",
     "booth": "TBD",
-    "industry": "Electronic & Computer Hardware",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Computer Engineering, Computer Science, Electrical Engineering",
     "website": "http://www.selinc.com",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
+  },
+  {
+    "name": "SEMICS Inc",
+    "booth": "TBD",
+    "industry": "Engineering & Tech",
+    "job_types": "Job",
+    "majors": "All Engineering Majors / Not Specified",
+    "website": "http://www.semics.com",
+    "on_campus_interviews": "No"
   },
   {
     "name": "Sletten Companies",
     "booth": "TBD",
-    "industry": "Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Internship",
     "majors": "Civil/Environmental Engineering, Construction Engineering, Mechanical Engineering",
     "website": "http://www.slettencompanies.com",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
   },
   {
     "name": "Southland Industries",
     "booth": "TBD",
-    "industry": "Engineering & Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Internship",
     "majors": "Biomedical Engineering, Civil/Environmental Engineering, Computer Engineering, Construction Engineering, Electrical Engineering, General Engineering, Materials Science & Engineering, Mechanical Engineering",
     "website": "https://southlandind.com/",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
   },
   {
     "name": "SSOE Group",
     "booth": "TBD",
-    "industry": "Architecture and Planning",
+    "industry": "Engineering & Tech",
     "job_types": "Internship, Cooperative Education",
     "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
     "website": "http://www.ssoe.com",
@@ -695,7 +749,7 @@
   {
     "name": "Stantec",
     "booth": "TBD",
-    "industry": "Architecture and Planning",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Electrical Engineering, Mechanical Engineering",
     "website": "https://www.stantec.com/en",
@@ -704,7 +758,7 @@
   {
     "name": "Tamarack Grove Engineering",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.tamarackgrove.com",
@@ -713,7 +767,7 @@
   {
     "name": "TD&H Engineering",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.tdhengineering.com",
@@ -722,7 +776,7 @@
   {
     "name": "The Land Group",
     "booth": "TBD",
-    "industry": "Architecture and Planning",
+    "industry": "Engineering & Tech",
     "job_types": "Job",
     "majors": "Civil/Environmental Engineering",
     "website": "http://www.thelandgroupinc.com/",
@@ -731,7 +785,7 @@
   {
     "name": "Tokyo Electron U.S. Holdings, Inc. (TEL)",
     "booth": "TBD",
-    "industry": "Manufacturing",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship, Cooperative Education",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.tel.com",
@@ -740,7 +794,7 @@
   {
     "name": "Trinity Consultants",
     "booth": "TBD",
-    "industry": "Environmental Services",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Materials Science & Engineering, Mechanical Engineering",
     "website": "http://www.trinityconsultants.com",
@@ -749,7 +803,7 @@
   {
     "name": "U.S. Department of State",
     "booth": "TBD",
-    "industry": "Government - Local, State & Federal",
+    "industry": "Engineering & Tech",
     "job_types": "Job",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://careers.state.gov",
@@ -758,16 +812,16 @@
   {
     "name": "U.S. Navy",
     "booth": "TBD",
-    "industry": "Government - Local, State & Federal",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://www.navy.com/",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
   },
   {
     "name": "Ulteig",
     "booth": "TBD",
-    "industry": "Utilities and Renewable Energy",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.ulteig.com/",
@@ -776,7 +830,7 @@
   {
     "name": "University of Washington, Foster School of Business",
     "booth": "TBD",
-    "industry": "Higher Education",
+    "industry": "Engineering & Tech",
     "job_types": "Graduate School",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://foster.uw.edu/",
@@ -785,25 +839,34 @@
   {
     "name": "Vector Structural Engineering, LLC",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://www.vectorse.com",
     "on_campus_interviews": "No"
   },
   {
+    "name": "Vertiv",
+    "booth": "TBD",
+    "industry": "Engineering & Tech",
+    "job_types": "Job",
+    "majors": "All Engineering Majors / Not Specified",
+    "website": "http://www.vertiv.com",
+    "on_campus_interviews": "No"
+  },
+  {
     "name": "Visual Concepts",
     "booth": "TBD",
-    "industry": "Internet & Software",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Computer Programming, Computer Science, Electrical Engineering",
     "website": "https://vcentertainment.com/",
-    "on_campus_interviews": "Yes"
+    "on_campus_interviews": "No"
   },
   {
     "name": "Washington State Department of Transportation",
     "booth": "TBD",
-    "industry": "Government - Local, State & Federal",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "http://wsdotjobs.com",
@@ -812,7 +875,7 @@
   {
     "name": "Wright Brothers, The Building Company, Eagle LLC",
     "booth": "TBD",
-    "industry": "Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "All Engineering Majors / Not Specified",
     "website": "https://wbnation.com/",
@@ -821,7 +884,7 @@
   {
     "name": "WSB & Associates, Inc.",
     "booth": "TBD",
-    "industry": "Civil Engineering",
+    "industry": "Engineering & Tech",
     "job_types": "Internship",
     "majors": "Civil/Environmental Engineering, Construction Engineering, Electrical Engineering, General Engineering, Materials Science & Engineering, Mechanical Engineering",
     "website": "http://www.wsbeng.com",
@@ -830,7 +893,7 @@
   {
     "name": "WSP",
     "booth": "TBD",
-    "industry": "Engineering & Construction",
+    "industry": "Engineering & Tech",
     "job_types": "Job, Internship",
     "majors": "Civil/Environmental Engineering, Construction Engineering, Electrical Engineering, Materials Science & Engineering, Mechanical Engineering",
     "website": "https://www.wsp.com/en-us",
