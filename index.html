@@ -57,12 +57,13 @@
         }
         table.dataTable thead th {
           border-bottom: 2px solid #0033A0 !important;
+          white-space: nowrap;
         }
     </style>
 </head>
 <body class="bg-slate-100 text-slate-800 min-h-screen p-4 md:p-8">
 
-<div class="max-w-7xl mx-auto bg-white rounded-xl shadow-lg border-t-8 border-bsuOrange overflow-hidden">
+<div class="max-w-[95%] mx-auto bg-white rounded-xl shadow-lg border-t-8 border-bsuOrange overflow-hidden">
 
     <!-- Boise State Header Banner -->
     <header class="bg-bsuBlue text-white p-6 md:p-8">
@@ -70,24 +71,32 @@
             <div>
                 <span class="text-bsuOrange font-bold uppercase tracking-widest text-xs">Boise State University</span>
                 <h1 class="text-3xl font-extrabold tracking-tight mt-1">College of Engineering Career Fair</h1>
-                <p class="text-blue-100 text-sm mt-1">Attending Employers Directory & On-Campus Interview Details</p>
+                <p class="text-blue-100 text-sm mt-1">Attending Employers Directory & Position Details</p>
             </div>
         </div>
     </header>
 
     <!-- Main Content Body -->
-    <div class="p-6 md:p-8">
+    <div class="p-4 md:p-6">
         <div class="overflow-x-auto">
-            <table id="directoryTable" class="w-full text-left border-collapse display">
-                <thead class="bg-slate-50 text-bsuBlue text-sm uppercase font-bold">
+            <table id="directoryTable" class="w-full text-left border-collapse display whitespace-nowrap">
+                <thead class="bg-slate-50 text-bsuBlue text-xs uppercase font-bold">
                 <tr>
-                    <th class="p-3">Employer</th>
-                    <th class="p-3">Booth</th>
+                    <th class="p-3">Employer Name</th>
                     <th class="p-3">Industry</th>
-                    <th class="p-3">Hiring For</th>
-                    <th class="p-3">Target Majors</th>
-                    <th class="p-3">Company Website</th>
-                    <th class="p-3">On-Campus Interviews</th>
+                    <th class="p-3">Website</th>
+                    <th class="p-3">Division</th>
+                    <th class="p-3">Employment Types</th>
+                    <th class="p-3">Jobs on Handshake</th>
+                    <th class="p-3">Job Titles</th>
+                    <th class="p-3">Majors</th>
+                    <th class="p-3">Major Groups</th>
+                    <th class="p-3">Combined Majors</th>
+                    <th class="p-3">Job Types</th>
+                    <th class="p-3">School Years</th>
+                    <th class="p-3">US Work Auth Required</th>
+                    <th class="p-3">Accepts OPT/CPT</th>
+                    <th class="p-3">Willing to Sponsor</th>
                 </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-200 text-sm">
@@ -105,46 +114,57 @@
 
 <script>
     $(document).ready(function() {
+      // Helper function for boolean badges
+      function renderBadge(val) {
+        if (val === true) {
+          return `<span class="inline-block bg-emerald-50 text-emerald-700 border-emerald-200 text-xs px-2.5 py-0.5 rounded-full border font-semibold">Yes</span>`;
+        } else if (val === false) {
+          return `<span class="inline-block bg-slate-100 text-slate-500 border-slate-200 text-xs px-2.5 py-0.5 rounded-full border font-medium">No</span>`;
+        }
+        return `<span class="text-slate-400 font-normal">${val || 'N/A'}</span>`;
+      }
+
       fetch('./employers.json')
         .then(res => res.json())
         .then(data => {
           $('#directoryTable').DataTable({
             data: data,
             columns: [
-              {
-                data: 'name',
-                className: 'font-bold text-slate-900'
-              },
-              {
-                data: 'booth',
-                render: function(data) {
-                  return `<span class="inline-block bg-blue-50 text-bsuBlue text-xs font-bold px-2.5 py-1 rounded-full border border-blue-200">${data}</span>`;
-                }
-              },
-              { data: 'industry' },
-              { data: 'job_types' },
-              { data: 'majors' },
+              { data: 'employer_name', className: 'font-bold text-slate-900' },
+              { data: 'employer_industry' },
               {
                 data: 'website',
                 render: function(data) {
                   if (!data) return '<span class="text-slate-400">N/A</span>';
                   let url = data.startsWith('http') ? data : 'https://' + data;
-                  return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-bsuBlue hover:text-bsuOrange hover:underline font-semibold break-all">${data}</a>`;
+                  return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-bsuBlue hover:text-bsuOrange hover:underline font-semibold">${data}</a>`;
                 }
               },
+              { data: 'division' },
+              { data: 'employment_types' },
+              { data: 'jobs_on_handshake' },
+              { data: 'job_titles' },
+              { data: 'majors' },
+              { data: 'major_groups' },
+              { data: 'combined_majors' },
+              { data: 'job_types' },
+              { data: 'school_years' },
               {
-                data: 'on_campus_interviews',
-                render: function(data) {
-                  let isYes = data === 'Yes';
-                  let badgeStyles = isYes
-                    ? 'bg-orange-50 text-bsuOrange border-bsuOrange font-bold'
-                    : 'bg-slate-100 text-slate-600 border-slate-200';
-                  return `<span class="inline-block ${badgeStyles} text-xs px-3 py-1 rounded-full border">${data}</span>`;
-                }
+                data: 'us_work_authorization_required',
+                render: renderBadge
+              },
+              {
+                data: 'accepts_opt_cpt',
+                render: renderBadge
+              },
+              {
+                data: 'willing_to_sponsor',
+                render: renderBadge
               }
             ],
             pageLength: 25,
-            responsive: true,
+            responsive: false,
+            scrollX: true,
             language: {
               search: "Filter Directory:",
               searchPlaceholder: "Search major, industry, or company..."
@@ -153,7 +173,7 @@
         })
         .catch(err => {
           console.error("Error loading employers.json:", err);
-          $('tbody').html('<tr><td colspan="7" class="p-4 text-center text-red-600 font-semibold">Failed to load directory data. Please ensure employers.json exists.</td></tr>');
+          $('tbody').html('<tr><td colspan="15" class="p-4 text-center text-red-600 font-semibold">Failed to load directory data. Please ensure employers.json exists.</td></tr>');
         });
     });
 </script>
