@@ -31,6 +31,23 @@
           text-overflow: ellipsis;
         }
 
+        /* Scrollable cell styling for Hiring Majors */
+        .cell-scrollable {
+          max-width: 220px;
+          overflow-x: auto;
+          white-space: nowrap;
+          scrollbar-width: thin;
+        }
+
+        .cell-scrollable::-webkit-scrollbar {
+          height: 4px;
+        }
+
+        .cell-scrollable::-webkit-scrollbar-thumb {
+          background-color: #cbd5e1;
+          border-radius: 2px;
+        }
+
         /* Move filter box to the left */
         .dataTables_wrapper .dataTables_filter {
           float: left !important;
@@ -171,7 +188,8 @@
                 data: row => row.hiring_majors || row.combined_majors || row.major_groups || '',
                 render: function(data) {
                   if (!data) return '<span class="text-slate-400">N/A</span>';
-                  return `<span class="font-medium text-slate-800">${data}</span>`;
+                  let clean = $('<div>').text(data).html();
+                  return `<div class="cell-scrollable font-medium text-slate-800" title="${clean}">${clean}</div>`;
                 }
               },
               { data: row => row.job_types || '' },
