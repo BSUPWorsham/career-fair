@@ -179,7 +179,9 @@ def process_handshake_csv():
             for name in target_names:
                 idx = header_map.get(name.lower())
                 if idx is not None and idx < len(row):
-                    return row[idx]
+                    val = row[idx].strip()
+                    if val:
+                        return val
             return ""
 
         for row in reader:
@@ -193,8 +195,16 @@ def process_handshake_csv():
             if not name:
                 continue
 
-            raw_majors = get_val(row, ["Combined Majors", "Major Groups", "Majors", "Hiring Majors"])
-            hiring_majors = MAJORS_OVERRIDE_MAP.get(name) or abbreviate_majors(raw_majors)
+            # Look up major overrides first, otherwise search all major columns in order
+            override = MAJORS_OVERRIDE_MAP.get(name)
+            if not override:
+                for k, v in MAJORS_OVERRIDE_MAP.items():
+                    if k.lower() in name.lower() or name.lower() in k.lower():
+                        override = v
+                        break
+
+            raw_majors = get_val(row, ["Combined Majors", "Majors", "Major Groups", "Hiring Majors"])
+            hiring_majors = override if override else abbreviate_majors(raw_majors)
 
             employer_entry = {
                 "employer_name": name,
