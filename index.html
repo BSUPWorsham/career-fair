@@ -167,7 +167,13 @@
               },
               { data: row => row.division || '', render: renderTruncated },
               { data: row => row.employment_types || '' },
-              { data: row => row.hiring_majors || '', render: renderTruncated },
+              {
+                data: row => row.hiring_majors || row.combined_majors || row.major_groups || '',
+                render: function(data) {
+                  if (!data) return '<span class="text-slate-400">N/A</span>';
+                  return `<span class="font-medium text-slate-800">${data}</span>`;
+                }
+              },
               { data: row => row.job_types || '' },
               { data: row => row.school_years || '', render: renderTruncated },
               { data: row => row.us_work_authorization_required, render: renderBadge },
