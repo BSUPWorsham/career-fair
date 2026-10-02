@@ -3,24 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boise State COEN - Career Fair Directory</title>
+    <title>Engineering, Computer Science, and Construction Management Employer Explorer</title>
 
-    <!-- Tailwind CSS & DataTables CSS -->
+    <!-- Tailwind CSS & DataTables CSS + FixedColumns extension CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                bsuBlue: '#0033A0',
-                bsuOrange: '#D64527',
-              }
-            }
-          }
-        }
-    </script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/4.3.0/css/fixedColumns.dataTables.min.css">
 
     <style>
         table.dataTable th,
@@ -30,11 +18,24 @@
           vertical-align: middle;
         }
 
+        /* Ensure frozen column has solid background */
+        table.dataTable tbody td.dtfc-fixed-left,
+        table.dataTable thead th.dtfc-fixed-left {
+          background-color: #ffffff !important;
+        }
+
         .cell-truncate {
           max-width: 180px;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+        }
+
+        /* Move filter box to the left */
+        .dataTables_wrapper .dataTables_filter {
+          float: left !important;
+          text-align: left !important;
+          margin-bottom: 0.75rem;
         }
 
         .dataTables_wrapper .dataTables_filter input {
@@ -45,8 +46,8 @@
           outline: none;
         }
         .dataTables_wrapper .dataTables_filter input:focus {
-          border-color: #0033A0;
-          box-shadow: 0 0 0 2px rgba(0, 51, 160, 0.2);
+          border-color: #000000;
+          box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
         }
         .dataTables_wrapper .dataTables_length select {
           border: 1px solid #cbd5e1;
@@ -54,38 +55,37 @@
           padding: 0.2rem 0.5rem;
         }
         .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-          background: #0033A0 !important;
+          background: #1e293b !important;
           color: white !important;
-          border: 1px solid #0033A0 !important;
+          border: 1px solid #1e293b !important;
           border-radius: 0.375rem;
         }
         .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-          background: #D64527 !important;
+          background: #475569 !important;
           color: white !important;
-          border: 1px solid #D64527 !important;
+          border: 1px solid #475569 !important;
           border-radius: 0.375rem;
         }
         table.dataTable tbody tr:hover {
           background-color: #f8fafc !important;
         }
         table.dataTable thead th {
-          border-bottom: 2px solid #0033A0 !important;
+          border-bottom: 2px solid #0f172a !important;
           white-space: nowrap;
         }
     </style>
 </head>
 <body class="bg-slate-100 text-slate-800 min-h-screen p-3 md:p-6">
 
-<div class="max-w-[98%] mx-auto bg-white rounded-xl shadow-lg border-t-8 border-bsuOrange overflow-hidden">
+<div class="max-w-[98%] mx-auto bg-white rounded-xl shadow-lg border-t-8 border-slate-900 overflow-hidden">
 
     <!-- Header Banner -->
-    <header class="bg-bsuBlue text-white p-5 md:p-6">
-        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-            <div>
-                <span class="text-bsuOrange font-bold uppercase tracking-widest text-xs">Boise State University</span>
-                <h1 class="text-2xl font-extrabold tracking-tight mt-0.5">COEN Career Fair October 22, 2026</h1>
-                <p class="text-blue-100 text-xs mt-0.5">Attending Employers Directory & Position Details</p>
-            </div>
+    <header class="bg-slate-900 text-white p-5 md:p-6">
+        <div class="flex flex-col gap-2">
+            <h1 class="text-2xl font-extrabold tracking-tight mt-0.5">Engineering, Computer Science, and Construction Management Employer Explorer</h1>
+            <p class="text-slate-300 text-xs mt-0.5 leading-relaxed">
+                An independent student-made interface for exploring employer information for the October 22nd career fair. Employer and position information sourced from Handshake. This interface reorganizes that information for easier student browsing. It is not the official Boise State CareerServices website.
+            </p>
         </div>
     </header>
 
@@ -93,15 +93,14 @@
     <div class="p-3 md:p-5">
         <div class="overflow-x-auto">
             <table id="directoryTable" class="w-full text-left border-collapse display whitespace-nowrap">
-                <thead class="bg-slate-50 text-bsuBlue text-xs uppercase font-bold">
+                <thead class="bg-slate-50 text-slate-900 text-xs uppercase font-bold">
                 <tr>
                     <th>Employer Name</th>
                     <th>Industry</th>
                     <th>Website</th>
                     <th>Division</th>
                     <th>Employment Types</th>
-                    <th>Major Groups</th>
-                    <th>Combined Majors</th>
+                    <th>Hiring Majors</th>
                     <th>Job Types</th>
                     <th>School Years</th>
                     <th>US Work Auth</th>
@@ -121,12 +120,13 @@
 <!-- Libraries -->
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/fixedcolumns/4.3.0/js/dataTables.fixedColumns.min.js"></script>
 
 <script>
     $(document).ready(function() {
       function renderBadge(val) {
         if (val === true) {
-          return `<span class="inline-block bg-emerald-50 text-emerald-700 border-emerald-200 text-xs px-2 py-0.5 rounded-full border font-semibold">Yes</span>`;
+          return `<span class="inline-block bg-slate-200 text-slate-800 border-slate-300 text-xs px-2 py-0.5 rounded-full border font-semibold">Yes</span>`;
         } else if (val === false) {
           return `<span class="inline-block bg-slate-100 text-slate-500 border-slate-200 text-xs px-2 py-0.5 rounded-full border font-medium">No</span>`;
         }
@@ -145,6 +145,9 @@
           $('#directoryTable').DataTable({
             data: data,
             autoWidth: false,
+            fixedColumns: {
+              left: 1
+            },
             columns: [
               {
                 data: row => row.employer_name || row.name || '',
@@ -159,13 +162,12 @@
                 render: function(data) {
                   if (!data) return '<span class="text-slate-400">N/A</span>';
                   let url = data.startsWith('http') ? data : 'https://' + data;
-                  return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-bsuBlue hover:text-bsuOrange hover:underline font-semibold">${data}</a>`;
+                  return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-slate-900 hover:text-slate-600 hover:underline font-semibold">${data}</a>`;
                 }
               },
               { data: row => row.division || '', render: renderTruncated },
               { data: row => row.employment_types || '' },
-              { data: row => row.major_groups || '', render: renderTruncated },
-              { data: row => row.combined_majors || '', render: renderTruncated },
+              { data: row => row.hiring_majors || '', render: renderTruncated },
               { data: row => row.job_types || '' },
               { data: row => row.school_years || '', render: renderTruncated },
               { data: row => row.us_work_authorization_required, render: renderBadge },
@@ -183,7 +185,7 @@
         })
         .catch(err => {
           console.error("Error loading employers.json:", err);
-          $('tbody').html('<tr><td colspan="12" class="p-4 text-center text-red-600 font-semibold">Failed to load directory data. Please ensure employers.json exists.</td></tr>');
+          $('tbody').html('<tr><td colspan="11" class="p-4 text-center text-red-600 font-semibold">Failed to load directory data. Please ensure employers.json exists.</td></tr>');
         });
     });
 </script>
