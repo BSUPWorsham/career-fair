@@ -6,7 +6,6 @@ import re
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, '..'))
 
-# Locate employers.csv and jobs.csv
 EMPLOYERS_CSV_PATHS = [
     os.path.join(PROJECT_ROOT, 'data', 'employers.csv'),
     os.path.join(PROJECT_ROOT, 'employers.csv'),
@@ -49,7 +48,7 @@ MAJOR_ABBREVIATIONS = {
 
 MAJORS_OVERRIDE_MAP = {
     "Ackerman-Estvold": "CE, CM",
-    "Advanced Engineering and Environmental Services (AE2S)": "AE2S",
+    "Advanced Engineering and Environmental Services, LLC (AE2S)": "AE2S",
     "AKS Engineering & Forestry": "CE, CM, Engr, Environ, Forestry",
     "Allwest Testing & Engineering": "CE, Environ, Geotech",
     "Apex Companies / Forsgren": "CM, CE, Environ, Geo",
@@ -144,7 +143,9 @@ MAJORS_OVERRIDE_MAP = {
 def clean_val(val):
     if val is None:
         return ""
-    return " ".join(str(val).strip().split())
+    # Strip whitespace, replace problematic quotes or control characters
+    s = str(val).replace('\r', ' ').replace('\n', ' ').strip()
+    return " ".join(s.split())
 
 def abbreviate_majors(text):
     if not text:
@@ -167,7 +168,6 @@ def process_csvs():
         print("Error: Could not find 'employers.csv'.")
         return
 
-    # 1. Parse job IDs from jobs.csv (if available)
     company_job_ids = {}
     if JOBS_PATH:
         print(f"Reading jobs from: {JOBS_PATH}")
@@ -180,8 +180,6 @@ def process_csvs():
                     if emp not in company_job_ids:
                         company_job_ids[emp] = set()
                     company_job_ids[emp].add(jid)
-    else:
-        print("Warning: 'jobs.csv' not found. 'Jobs on Handshake' will be empty.")
 
     print(f"Reading employers from: {EMPLOYERS_PATH}")
     employers_list = []
@@ -216,7 +214,6 @@ def process_csvs():
             if not name:
                 continue
 
-            # Match job IDs flexibly (exact match or case-insensitive substring match)
             matched_job_ids = set()
             if name in company_job_ids:
                 matched_job_ids = company_job_ids[name]
@@ -252,8 +249,9 @@ def process_csvs():
             }
             employers_list.append(employer_entry)
 
+    # Write out valid JSON with strict UTF-8 encoding
     with open(OUTPUT_PATH, 'w', encoding='utf-8') as f:
-        json.dump(employers_list, f, indent=2)
+        json.dump(employers_list, f, ensure_ascii=False, indent=2)
 
     print(f"Success! Processed {len(employers_list)} employers -> saved to {OUTPUT_PATH}")
 
