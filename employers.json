@@ -18,7 +18,7 @@
     "website": "http://www.ae2s.com",
     "jobs_on_handshake": "11417264, 11417269, 11435424, 11435433, 11435445, 11435475, 11435535, 11435551, 11435570, 11435595, 11435616, 11435657, 11435681, 11435694, 11435726, 11436156, 11436179, 11436206, 11436221",
     "employment_types": "Full-Time, Part-Time",
-    "hiring_majors": "AE2S",
+    "hiring_majors": "",
     "job_types": "Job, Internship",
     "school_years": "Sophomore, Junior, Senior, Masters",
     "us_work_authorization_required": true,
@@ -57,7 +57,7 @@
     "website": "https://www.apexcos.com",
     "jobs_on_handshake": "",
     "employment_types": "Full-Time, Part-Time",
-    "hiring_majors": "CE, CE BS, CE, MEngr, CE, MS, CM, Construction Mgmt BS",
+    "hiring_majors": "CM, CE, Environ, Geo",
     "job_types": "Job, Internship",
     "school_years": "Sophomore, Junior, Senior, Masters",
     "us_work_authorization_required": true,
@@ -637,6 +637,19 @@
     "willing_to_sponsor": false
   },
   {
+    "employer_name": "J-U-B ENGINEERS",
+    "employer_industry": "Civil Engineering",
+    "website": "http://www.jub.com",
+    "jobs_on_handshake": "11406081, 11446054, 11499881, 11568618, 11624379, 11624398, 11624423",
+    "employment_types": "Full-Time",
+    "hiring_majors": "CE, CE BS, CE, MEngr, CE, MS, CM, Construction Mgmt BS",
+    "job_types": "Job, Internship",
+    "school_years": "Junior, Senior, Masters",
+    "us_work_authorization_required": true,
+    "accepts_opt_cpt": true,
+    "willing_to_sponsor": true
+  },
+  {
     "employer_name": "J.F. Brennan Company",
     "employer_industry": "Construction",
     "website": "https://www.jfbrennan.com",
@@ -700,19 +713,6 @@
     "us_work_authorization_required": true,
     "accepts_opt_cpt": true,
     "willing_to_sponsor": false
-  },
-  {
-    "employer_name": "J-U-B ENGINEERS",
-    "employer_industry": "Civil Engineering",
-    "website": "http://www.jub.com",
-    "jobs_on_handshake": "11406081, 11446054, 11499881, 11568618, 11624379, 11624398, 11624423",
-    "employment_types": "Full-Time",
-    "hiring_majors": "CE, CE BS, CE, MEngr, CE, MS, CM, Construction Mgmt BS",
-    "job_types": "Job, Internship",
-    "school_years": "Junior, Senior, Masters",
-    "us_work_authorization_required": true,
-    "accepts_opt_cpt": true,
-    "willing_to_sponsor": true
   },
   {
     "employer_name": "Keller Associates, Inc.",
@@ -1019,7 +1019,7 @@
     "website": "http://WWW.rscigroup.com",
     "jobs_on_handshake": "",
     "employment_types": "",
-    "hiring_majors": "CM, CE, ME",
+    "hiring_majors": "CE, CE BS, CE, MEngr, CE, MS, Computer Systems Engr BS, CM, Construction Mgmt BS, Electrical & Computer Engr MS, Electrical&Computer Engr, PhD, Electrical & Computer MEngr, EE, EE BS, EE, MEngr, EE, MS, MSE, MSE BS, MSE, MS, MSE, PhD, MSE, MEngr, ME, ME BS, ME, MEngr, ME, MS, Pre-ME",
     "job_types": "Job, Internship",
     "school_years": "",
     "us_work_authorization_required": true,

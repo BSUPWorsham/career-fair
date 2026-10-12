@@ -1,3 +1,6 @@
+
+
+Index · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -199,26 +202,39 @@
 <script src="https://cdn.datatables.net/fixedcolumns/4.3.0/js/dataTables.fixedColumns.min.js"></script>
 
 <script>
-    \$(document).ready(function() {
+    $(document).ready(function() {
+      function esc(text) {
+        return $('<div>').text(text == null ? '' : text).html().replace(/"/g, '&quot;');
+      }
+
       function renderBadge(val) {
         if (val === true) {
           return `<span class="inline-block bg-slate-200 text-slate-800 border-slate-300 text-xs px-1.5 py-0.5 rounded-full border font-semibold">Yes</span>`;
         } else if (val === false) {
           return `<span class="inline-block bg-slate-100 text-slate-500 border-slate-200 text-xs px-1.5 py-0.5 rounded-full border font-medium">No</span>`;
         }
-        return `<span class="text-slate-400 font-normal">${val || 'N/A'}</span>`;
+        return `<span class="text-slate-400 font-normal">${esc(val) || 'N/A'}</span>`;
       }
 
       function renderTruncated(text) {
         if (!text) return '<span class="text-slate-400">N/A</span>';
-        let clean = \$('<div>').text(text).html();
+        let clean = esc(text);
         return `<div class="cell-truncate" title="${clean}">${clean}</div>`;
       }
 
+      function renderScrollable(data) {
+        if (!data) return '<span class="text-slate-400">N/A</span>';
+        let clean = esc(data);
+        return `<div class="cell-scrollable font-medium text-slate-800" title="${clean}">${clean}</div>`;
+      }
+
       fetch('./employers.json')
-        .then(res => res.json())
+        .then(res => {
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          return res.json();
+        })
         .then(data => {
-          \$('#directoryTable').DataTable({
+          $('#directoryTable').DataTable({
             data: data,
             autoWidth: false,
             dom: '<"top"fl>rt<"bottom"ip><"clear">',
@@ -236,28 +252,21 @@
               },
               {
                 data: row => row.website || '',
-                render: function(data) {
+                render: function(data, type) {
+                  if (type !== 'display') return data;
                   if (!data) return '<span class="text-slate-400">N/A</span>';
-                  let url = data.startsWith('http') ? data : 'https://' + data;
-                  return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-slate-900 hover:text-slate-600 hover:underline font-semibold">${data}</a>`;
+                  let url = /^https?:\/\//i.test(data) ? data : 'https://' + data;
+                  return `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer" class="text-slate-900 hover:text-slate-600 hover:underline font-semibold">${esc(data)}</a>`;
                 }
               },
               {
                 data: row => row.jobs_on_handshake || '',
-                render: function(data) {
-                  if (!data) return '<span class="text-slate-400">N/A</span>';
-                  let clean = \$('<div>').text(data).html();
-                  return `<div class="cell-scrollable font-medium text-slate-800" title="${clean}">${clean}</div>`;
-                }
+                render: renderScrollable
               },
               { data: row => row.employment_types || '', render: renderTruncated },
               {
                 data: row => row.hiring_majors || row.combined_majors || row.major_groups || '',
-                render: function(data) {
-                  if (!data) return '<span class="text-slate-400">N/A</span>';
-                  let clean = \$('<div>').text(data).html();
-                  return `<div class="cell-scrollable font-medium text-slate-800" title="${clean}">${clean}</div>`;
-                }
+                render: renderScrollable
               },
               { data: row => row.job_types || '', render: renderTruncated },
               { data: row => row.school_years || '', render: renderTruncated },
@@ -276,7 +285,10 @@
         })
         .catch(err => {
           console.error("Error loading employers.json:", err);
-          \$('tbody').html('<tr><td colspan="11" class="p-4 text-center text-red-600 font-semibold">Failed to load directory data. Please ensure employers.json exists.</td></tr>');
+          const hint = location.protocol === 'file:'
+            ? 'Browsers block this when the page is opened by double-clicking. Run "python -m http.server 8000" in this folder and open http://localhost:8000.'
+            : 'Please ensure employers.json is in the same folder as index.html (run parse_csv.py to create it).';
+          $('#directoryTable tbody').html('<tr><td colspan="11" class="p-4 text-center text-red-600 font-semibold">Failed to load directory data. ' + hint + '</td></tr>');
         });
     });
 </script>
