@@ -195,7 +195,6 @@ def process_handshake_csv():
             if not name:
                 continue
 
-            # Look up major overrides first, otherwise search all major columns in order
             override = MAJORS_OVERRIDE_MAP.get(name)
             if not override:
                 for k, v in MAJORS_OVERRIDE_MAP.items():
@@ -210,7 +209,7 @@ def process_handshake_csv():
                 "employer_name": name,
                 "employer_industry": clean_val(get_val(row, ["Employer Industry", "Industry"])),
                 "website": clean_val(get_val(row, ["Website", "URL"])),
-                "division": clean_val(get_val(row, ["Division"])),
+                "jobs_on_handshake": clean_val(get_val(row, ["Jobs on Handshake", "Job IDs", "Listings", "Jobs"])),
                 "employment_types": clean_val(get_val(row, ["Employment Types", "Employment Type"])),
                 "hiring_majors": hiring_majors,
                 "job_types": clean_val(get_val(row, ["Job Types", "Job Type"])),

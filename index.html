@@ -33,7 +33,7 @@
           text-overflow: ellipsis;
         }
 
-        /* Scrollable cell styling for Hiring Majors */
+        /* Scrollable cell styling for Hiring Majors & Listings */
         .cell-scrollable {
           max-width: 200px;
           overflow-x: auto;
@@ -109,14 +109,12 @@
         /* MOBILE STYLING (Screens under 640px)                               */
         /* ------------------------------------------------------------------ */
         @media (max-width: 640px) {
-          /* Smaller text and tighter padding for table cells */
           table.dataTable th,
           table.dataTable td {
             padding: 6px 6px !important;
             font-size: 0.75rem !important;
           }
 
-          /* Narrow frozen column so remaining screen space shows adjacent data */
           table.dataTable tbody td.dtfc-fixed-left,
           table.dataTable thead th.dtfc-fixed-left,
           .mobile-frozen-cell {
@@ -128,19 +126,16 @@
             line-height: 1.25 !important;
           }
 
-          /* Allow text wrapping for truncated fields on mobile */
           .cell-truncate {
             max-width: 140px;
             white-space: normal !important;
             word-wrap: break-word;
           }
 
-          /* Make majors column slightly narrower on mobile */
           .cell-scrollable {
             max-width: 140px;
           }
 
-          /* Stack filter and length selector vertically on small screens */
           .dataTables_wrapper .dataTables_filter,
           .dataTables_wrapper .dataTables_length {
             float: none !important;
@@ -179,7 +174,7 @@
                     <th>Employer Name</th>
                     <th>Industry</th>
                     <th>Website</th>
-                    <th>Division</th>
+                    <th>Jobs on Handshake</th>
                     <th>Employment Types</th>
                     <th>Hiring Majors</th>
                     <th>Job Types</th>
@@ -204,7 +199,7 @@
 <script src="https://cdn.datatables.net/fixedcolumns/4.3.0/js/dataTables.fixedColumns.min.js"></script>
 
 <script>
-    $(document).ready(function() {
+    \$(document).ready(function() {
       function renderBadge(val) {
         if (val === true) {
           return `<span class="inline-block bg-slate-200 text-slate-800 border-slate-300 text-xs px-1.5 py-0.5 rounded-full border font-semibold">Yes</span>`;
@@ -216,14 +211,14 @@
 
       function renderTruncated(text) {
         if (!text) return '<span class="text-slate-400">N/A</span>';
-        let clean = $('<div>').text(text).html();
+        let clean = \$('<div>').text(text).html();
         return `<div class="cell-truncate" title="${clean}">${clean}</div>`;
       }
 
       fetch('./employers.json')
         .then(res => res.json())
         .then(data => {
-          $('#directoryTable').DataTable({
+          \$('#directoryTable').DataTable({
             data: data,
             autoWidth: false,
             dom: '<"top"fl>rt<"bottom"ip><"clear">',
@@ -247,13 +242,20 @@
                   return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-slate-900 hover:text-slate-600 hover:underline font-semibold">${data}</a>`;
                 }
               },
-              { data: row => row.division || '', render: renderTruncated },
+              {
+                data: row => row.jobs_on_handshake || '',
+                render: function(data) {
+                  if (!data) return '<span class="text-slate-400">N/A</span>';
+                  let clean = \$('<div>').text(data).html();
+                  return `<div class="cell-scrollable font-medium text-slate-800" title="${clean}">${clean}</div>`;
+                }
+              },
               { data: row => row.employment_types || '', render: renderTruncated },
               {
                 data: row => row.hiring_majors || row.combined_majors || row.major_groups || '',
                 render: function(data) {
                   if (!data) return '<span class="text-slate-400">N/A</span>';
-                  let clean = $('<div>').text(data).html();
+                  let clean = \$('<div>').text(data).html();
                   return `<div class="cell-scrollable font-medium text-slate-800" title="${clean}">${clean}</div>`;
                 }
               },
@@ -274,7 +276,7 @@
         })
         .catch(err => {
           console.error("Error loading employers.json:", err);
-          $('tbody').html('<tr><td colspan="11" class="p-4 text-center text-red-600 font-semibold">Failed to load directory data. Please ensure employers.json exists.</td></tr>');
+          \$('tbody').html('<tr><td colspan="11" class="p-4 text-center text-red-600 font-semibold">Failed to load directory data. Please ensure employers.json exists.</td></tr>');
         });
     });
 </script>
