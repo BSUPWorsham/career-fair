@@ -4,21 +4,26 @@ import os
 import re
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, '..'))
 
-POSSIBLE_PATHS = [
-    os.path.join(SCRIPT_DIR, '..', 'data', 'employers.csv'),
+# Locate employers.csv and jobs.csv
+EMPLOYERS_CSV_PATHS = [
+    os.path.join(PROJECT_ROOT, 'data', 'employers.csv'),
+    os.path.join(PROJECT_ROOT, 'employers.csv'),
     os.path.join(SCRIPT_DIR, 'employers.csv'),
-    os.path.join(SCRIPT_DIR, '..', 'employers.csv'),
-    os.path.join(SCRIPT_DIR, 'data', 'employers.csv')
 ]
 
-CSV_PATH = None
-for path in POSSIBLE_PATHS:
-    if os.path.exists(path) and os.path.getsize(path) > 0:
-        CSV_PATH = path
-        break
+JOBS_CSV_PATHS = [
+    os.path.join(PROJECT_ROOT, 'jobs.csv'),
+    os.path.join(PROJECT_ROOT, 'Final_updated active jobs with majors fall 2026.csv'),
+    os.path.join(PROJECT_ROOT, 'data', 'jobs.csv'),
+    os.path.join(SCRIPT_DIR, 'jobs.csv'),
+]
 
-OUTPUT_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'employers.json'))
+EMPLOYERS_PATH = next((p for p in EMPLOYERS_CSV_PATHS if os.path.exists(p) and os.path.getsize(p) > 0), None)
+JOBS_PATH = next((p for p in JOBS_CSV_PATHS if os.path.exists(p) and os.path.getsize(p) > 0), None)
+
+OUTPUT_PATH = os.path.join(PROJECT_ROOT, 'employers.json')
 
 MAJOR_ABBREVIATIONS = {
     r'\bCivil Engineering\b': 'CE',
@@ -157,20 +162,36 @@ def parse_bool(val):
         return False
     return val
 
-def process_handshake_csv():
-    if not CSV_PATH:
+def process_csvs():
+    if not EMPLOYERS_PATH:
         print("Error: Could not find 'employers.csv'.")
         return
 
-    print(f"Reading from: {CSV_PATH}")
+    # 1. Parse job IDs from jobs.csv (if available)
+    company_job_ids = {}
+    if JOBS_PATH:
+        print(f"Reading jobs from: {JOBS_PATH}")
+        with open(JOBS_PATH, mode='r', encoding='utf-8-sig') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                emp = clean_val(row.get("Employer", ""))
+                jid = clean_val(row.get("Job ID", ""))
+                if emp and jid:
+                    if emp not in company_job_ids:
+                        company_job_ids[emp] = set()
+                    company_job_ids[emp].add(jid)
+    else:
+        print("Warning: 'jobs.csv' not found. 'Jobs on Handshake' will be empty.")
+
+    print(f"Reading employers from: {EMPLOYERS_PATH}")
     employers_list = []
 
-    with open(CSV_PATH, mode='r', encoding='utf-8-sig') as f:
+    with open(EMPLOYERS_PATH, mode='r', encoding='utf-8-sig') as f:
         reader = csv.reader(f)
         try:
             headers = [h.strip() for h in next(reader)]
         except StopIteration:
-            print(f"Error: '{CSV_PATH}' is empty.")
+            print("Error: employers.csv is empty.")
             return
 
         header_map = {h.lower(): i for i, h in enumerate(headers)}
@@ -195,6 +216,17 @@ def process_handshake_csv():
             if not name:
                 continue
 
+            # Match job IDs flexibly (exact match or case-insensitive substring match)
+            matched_job_ids = set()
+            if name in company_job_ids:
+                matched_job_ids = company_job_ids[name]
+            else:
+                for k, jids in company_job_ids.items():
+                    if k.lower() in name.lower() or name.lower() in k.lower():
+                        matched_job_ids.update(jids)
+
+            jobs_str = ", ".join(sorted(matched_job_ids)) if matched_job_ids else clean_val(get_val(row, ["Jobs on Handshake", "Job IDs", "Listings"]))
+
             override = MAJORS_OVERRIDE_MAP.get(name)
             if not override:
                 for k, v in MAJORS_OVERRIDE_MAP.items():
@@ -209,7 +241,7 @@ def process_handshake_csv():
                 "employer_name": name,
                 "employer_industry": clean_val(get_val(row, ["Employer Industry", "Industry"])),
                 "website": clean_val(get_val(row, ["Website", "URL"])),
-                "jobs_on_handshake": clean_val(get_val(row, ["Jobs on Handshake", "Job IDs", "Listings", "Jobs"])),
+                "jobs_on_handshake": jobs_str,
                 "employment_types": clean_val(get_val(row, ["Employment Types", "Employment Type"])),
                 "hiring_majors": hiring_majors,
                 "job_types": clean_val(get_val(row, ["Job Types", "Job Type"])),
@@ -226,4 +258,4 @@ def process_handshake_csv():
     print(f"Success! Processed {len(employers_list)} employers -> saved to {OUTPUT_PATH}")
 
 if __name__ == '__main__':
-    process_handshake_csv()
+    process_csvs()
