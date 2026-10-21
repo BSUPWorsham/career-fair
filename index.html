@@ -172,13 +172,11 @@
                 <thead class="bg-slate-50 text-slate-900 text-xs uppercase font-bold">
                 <tr>
                     <th>Employer Name</th>
-                    <th>Industry</th>
                     <th>Website</th>
-                    <th>Jobs on Handshake</th>
-                    <th>Employment Types</th>
                     <th>Hiring Majors</th>
+                    <th>Industry</th>
+                    <th>Employment Types</th>
                     <th>Job Types</th>
-                    <th>School Years</th>
                     <th>US Work Auth</th>
                     <th>OPT/CPT</th>
                     <th>Sponsor</th>
@@ -244,10 +242,6 @@
                 className: 'font-bold text-slate-900 mobile-frozen-cell'
               },
               {
-                data: row => row.employer_industry || row.industry || '',
-                render: renderTruncated
-              },
-              {
                 data: row => row.website || '',
                 render: function(data, type) {
                   if (type !== 'display') return data;
@@ -257,16 +251,15 @@
                 }
               },
               {
-                data: row => row.jobs_on_handshake || '',
-                render: renderScrollable
-              },
-              { data: row => row.employment_types || '', render: renderTruncated },
-              {
                 data: row => row.hiring_majors || row.combined_majors || row.major_groups || '',
                 render: renderScrollable
               },
+              {
+                data: row => row.employer_industry || row.industry || '',
+                render: renderTruncated
+              },
+              { data: row => row.employment_types || '', render: renderTruncated },
               { data: row => row.job_types || '', render: renderTruncated },
-              { data: row => row.school_years || '', render: renderTruncated },
               { data: row => row.us_work_authorization_required, render: renderBadge },
               { data: row => row.accepts_opt_cpt, render: renderBadge },
               { data: row => row.willing_to_sponsor, render: renderBadge }
@@ -285,7 +278,7 @@
           const hint = location.protocol === 'file:'
             ? 'Browsers block this when the page is opened by double-clicking. Run "python -m http.server 8000" in this folder and open http://localhost:8000.'
             : 'Please ensure employers.json is in the same folder as index.html (run parse_csv.py to create it).';
-          $('#directoryTable tbody').html('<tr><td colspan="11" class="p-4 text-center text-red-600 font-semibold">Failed to load directory data. ' + hint + '</td></tr>');
+          $('#directoryTable tbody').html('<tr><td colspan="9" class="p-4 text-center text-red-600 font-semibold">Failed to load directory data. ' + hint + '</td></tr>');
         });
     });
 </script>
